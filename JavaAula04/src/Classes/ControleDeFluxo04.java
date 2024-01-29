@@ -14,14 +14,19 @@ public class ControleDeFluxo04 {
 		while(contador < 10) {
 			contador++;
 			System.out.println("Contador completo : " + contador);
+			//USANDO A FUNÇÃO BREAK PARA SSAIR DO LAÇO
+			if(contador == 7) {
+				break;
+			}
 		}
 		System.out.println("Fim do programa ");
 		
 		System.out.println("-------------------------- ");
 		System.out.println("Trabalhando com Do / While: ");
 		// TRABALHANDO COM DO WHILE
+		contador = 0;
 		do {
-			System.out.println("Dentro do do while ");
+			System.out.println("Dentro do do while " + contador++);
 		}while(contador < 10);
 		
 		System.out.println("Fim do Programa ");
