@@ -4,7 +4,13 @@ public class Arrays05 {
 	/*
 	 * CONTINUANDO O ESTUDO DE ARRAYS MULTIDIMENSIONAIS 
 	 * OBS 1: SO É NESSECÁRIO DECLARAR O TAMANHO DO PRIMEIRO ARRAY DELCARADO 
-	 * DO ARRAYS MULTIDMENSIONAL NÃO É NECESSARIO DECLARA UM PRE VALOR DE ESPACOS 
+	 * DO ARRAYS MULTIDMENSIONAL NÃO É NECESSARIO DECLARA UM PRE VALOR DE ESPACOS.
+	 * 
+	 * OBS 2: INSTANCIANDO DIRETAMENTE UM ARRAYS MULTIDIMENSIONAL ALOCANDO OS ESPACOS 
+	 * DENTRO DO ARRAY INICIAL E INFORMANDO QUANTOS ARRAYS QUERERM CRIA E QUANTO ELEMENTOS
+	 * CADA UM TERÁ 
+	 * 
+	 * EXEMPLO: INT[][] DIAS = NEW {[0,0], [1, 2, 3], [0, 0, 0, 0]};
 	 */
 
 	public static void main(String[] args) {
@@ -29,11 +35,8 @@ public class Arrays05 {
 			System.out.println("Endereços : " + arr);
 			for(int num: arr) {
 				System.out.println("Array Valores: " + num);
-				
 			}
 		}
-		
-
 	}
 
 }
