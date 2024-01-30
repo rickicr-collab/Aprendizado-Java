@@ -1,4 +1,4 @@
-package Classes;
+package Controledefluxo;
 
 public class ControleDeFluxo03 {
 	//CONTROLE DE FLUXO - ESTRUTURA SWITCH

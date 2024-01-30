@@ -1,4 +1,4 @@
-package Classes;
+package Controledefluxo;
 
 public class Exemplo02 {
 	// EXEMPLO DE USOS PARA OPERADOR TERNÁRIO ( MAIS NÃO É RECOMENDADO)

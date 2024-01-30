@@ -1,4 +1,4 @@
-package Classes;
+package Controledefluxo;
 
 public class ControleDeFluxo02 {
 	// CONTROLE DE FLUXO UTILIZANDO OPERADOR TERNÁRIO

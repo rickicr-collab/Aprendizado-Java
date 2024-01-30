@@ -1,4 +1,4 @@
-package Classe;
+package Variaveis;
 
 public class Exercicio2 {
 

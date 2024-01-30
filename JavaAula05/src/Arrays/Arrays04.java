@@ -1,4 +1,4 @@
-package Classes;
+package Arrays;
 	
 	/*
 	 * TRABALHANDO COM ARRAYS MULTIDIMENSIONAIS.

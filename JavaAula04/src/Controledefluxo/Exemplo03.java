@@ -1,4 +1,4 @@
-package Classes;
+package Controledefluxo;
 
 public class Exemplo03 {
 	// EXEMPLO DE TRABALHO COM ESTRUTURA SWITCH

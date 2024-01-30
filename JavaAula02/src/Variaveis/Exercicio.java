@@ -1,4 +1,4 @@
-package Classe;
+package Variaveis;
 
 public class Exercicio {
 		//EXERCICIO DE CLASSES PRIMITIVAS OU TIPOS PRIMITIVOS 

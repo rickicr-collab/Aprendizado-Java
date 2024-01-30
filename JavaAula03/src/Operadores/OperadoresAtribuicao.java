@@ -1,4 +1,4 @@
-package Classes;
+package Operadores;
 
 public class OperadoresAtribuicao {
 			// OPERADORES DE ATRIBUIÇÃO

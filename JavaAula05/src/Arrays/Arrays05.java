@@ -1,4 +1,4 @@
-package Classes;
+package Arrays;
 
 public class Arrays05 {
 	/*
