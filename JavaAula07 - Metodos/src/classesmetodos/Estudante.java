@@ -1,4 +1,9 @@
-package classes;
+package classesmetodos;
+
+	/*
+	 * MODIFICADORES DE ACESSO 
+	 * TRABALHANDO COM MODIFICADOR PRIVATE
+	 */
 
 public class Estudante {
 	//ATRIBUIDO OS ATRIBUTOS 

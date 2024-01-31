@@ -1,6 +1,6 @@
 package testes;
 
-import classes.Calculadora;
+import classesmetodos.Calculadora;
 
 public class CalculadoraTeste {
 

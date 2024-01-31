@@ -1,4 +1,4 @@
-package classes;
+package classesmetodos;
 
 /*
  * INTRODUÇÃO DO USO DE MÉTODOS DENTRO DAS CLASSES

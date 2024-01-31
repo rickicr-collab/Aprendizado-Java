@@ -1,6 +1,6 @@
 package testes;
 
-import classes.Professor;
+import classesmetodos.Professor;
 
 public class ProfessorTeste {
 

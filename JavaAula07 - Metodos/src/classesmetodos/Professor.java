@@ -1,4 +1,4 @@
-package classes;
+package classesmetodos;
 
 public class Professor {
 	/*
