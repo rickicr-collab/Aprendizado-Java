@@ -11,23 +11,23 @@ public class Estudante {
 		System.out.println("----- Dados do Estudante -----");
 		System.out.println("Nome do Aluno: " + this.nome);
 		System.out.println("Idade do Aluno: " + this.idade + " Anos de idade.");
-		if(notas != null) {
-			for(double nota: notas) {
+		if(this.notas != null) {
+			for(double nota: this.notas) {
 				System.out.println("Notas: " + nota);
 			}
 		}
 	}
 	
 	public void mediaAluno() {
-		if(notas == null) {
+		if(this.notas == null) {
 			System.out.println("O aluno não possue notas!!");
 			return;
 		}
 		double media = 0;
-		for(double nota: notas) {
+		for(double nota: this.notas) {
 			media += nota;
 		}
-		media = media / notas.length;
+		media = media / this.notas.length;
 		System.out.println("A média do aluno é: " + media);
 		if (media > 6) {
 			System.out.println("Aluno Aprovado!!");
@@ -35,5 +35,4 @@ public class Estudante {
 			System.out.println("Reprovado!!");
 		}
 	}
-		
 }
