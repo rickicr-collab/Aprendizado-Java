@@ -1,36 +1,35 @@
-package classesmetodos;
+package modificadorstatico.classes;
 
 /*
- * INTRODUÇÃO DO USO DE MÉTODOS DENTRO DAS CLASSES
+ * USANDO O OPERADOR ESTATIC NO EXEMPLO DA CLASSE CALCULADORA ABAIXO
+ * VIMOS QUE A ATRIBUIR O OPERADOR AOS MÉTODOS 
+ * É POSSIVEL ACESSAR OS MÉTODOS NA CLASSE PRINCIPAL DENTRO DO MÉTODO MAIN
+ * DEVIDO AO MÉTODO STATIC PERTENCER A PROPRIA CLASSE 
  * 
  */
 public class Calculadora {
-	/*
-	 * CRIANDO UM METODO COM VARIAVEIS LOCAIS 
-	 * QUE SERÃO EXECUTADS SOMENTE QUANDO O 
-	 * METODO FOR CHAMADO
-	 */
+	
 	
 	//MÉTODO SOMADOR
-	public void Somador() {
+	public static void Somador() {
 		System.out.println("A soma é: " + (5+5));
 		
 	}
 	
 	//MÉTODO SUBTRAIR
-	public void Subtrair() {
+	public static void Subtrair() {
 		System.out.println("A subtração é: " + (5-5));
 	}
 	
 	//METODO MULTIPLICA COM PARÃMENTROS
-	public  void Multiplica(int num1, int num2) {
+	public static void Multiplica(int num1, int num2) {
 		int resultado = num1 * num2;
 		System.out.println("A multiplicação será: " + resultado);
 		
 	}
 	
 	//METODO DIVIDIR COM PARAMENTROS E RETORNO
-	public double Dividir(double num1, double num2) {
+	public static double Dividir(double num1, double num2) {
 		double resultado =  num1 / num2;
 		// CRIANDO UMA CONDIÇÃO ONDE NUM2 É DIFERENTE DE 0
 		if(num2 != 0) {
@@ -41,7 +40,7 @@ public class Calculadora {
 	
 	//MÉTODO PARA RETORNAR A OPERAÇÃO NORMAL 
 	//MÉTODO PARA RETORNAR CASO A OPERADOR POSSUA 0 NO NUM2
-	public void ImprimiDoisNumerosDivididos(double num1, double num2) {
+	public static void ImprimiDoisNumerosDivididos(double num1, double num2) {
 		if(num2 != 0) {
 			System.out.println(num1 / num2);
 			return;
@@ -50,7 +49,7 @@ public class Calculadora {
 	}
 	
 	//MÉTODO CRIADO PARA ALTERAR VALORES 
-	public void AlterandoDoisNumeros(int a, int b) {
+	public static void AlterandoDoisNumeros(int a, int b) {
 		a = 30;
 		b = 50;
 		System.out.println("Dentro do método altera dos numeros!");
@@ -59,7 +58,7 @@ public class Calculadora {
 	}
 	
 	//MÉTODO DE SOMA DE ELEMENTOS DE ARRAY
-	public void somaArray(int[] numeros) {
+	public static void somaArray(int[] numeros) {
 		int soma = 0;
 		for(int num: numeros) {
 			soma += num;
@@ -75,7 +74,7 @@ public class Calculadora {
 	 * 3.SE VOCE COLOCAR MAIS PARAMENTROS O VARARGS SEMPRE TEM QUE SER O ULTIMO PARAMENTRO.(MESMO TIPOS DIFERENTES)
 	 * 
 	 */
-	public void somaVarArgs(int... numeros) {
+	public static void somaVarArgs(int... numeros) {
 		int soma = 0;
 		for(int num: numeros) {
 			soma += num;
