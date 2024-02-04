@@ -1,0 +1,13 @@
+package associacao.classes;
+	/*
+	 * TRABALHANDO COM ASSOCIACÃO DE CLASSES BASEADAS NA UML
+	 * TANTO A CLASSE DEPARTAMENTO QUANTO A CLASSE ENDEREÇO
+	 * DECLARANDO ATRIBUTORS DE SUAS RESPECTIVAS CLASSES DENTRO DA CLASSE PESSOA
+	 * INFORMANDO A ASSOCIAÇÃO ENTRE AS CLASSES.
+	 */
+public class Pessoa {
+	private Departamento departamento;
+	private Endereco endereco;
+	
+
+}
