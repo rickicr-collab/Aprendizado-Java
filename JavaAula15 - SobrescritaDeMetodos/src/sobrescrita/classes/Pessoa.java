@@ -21,7 +21,11 @@ public class Pessoa {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Pessoa [nome=").append(nome).append(", idade=").append(idade).append("]");
+		builder.append("Pessoa [nome=");
+		builder.append(nome);
+		builder.append(", idade=");
+		builder.append(idade);
+		builder.append("]");
 		return builder.toString();
 	}
 	
