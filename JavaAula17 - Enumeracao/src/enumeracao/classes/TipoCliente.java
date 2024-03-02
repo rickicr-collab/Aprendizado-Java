@@ -20,9 +20,23 @@ package enumeracao.classes;
  * OBS8: AO SE DECLARAR UM CONSTRUTOR NUMA ENUMERAÇÃO VOCE TEM QUE ESPECIFICAR PARA CADA CONSTATE UM VALOR DECLARADO
  * PELO TIPO PRIMITIVO DO ATRIBUTO.
  * OBS9: VOCE PODE ATRIBUIR MAIS UM TIPO DE VALOR PARA AS CONSTANTES DE UMA ENUMERAÇÃO
+ * 
+ * PARTE 3 
+ * ENUMERAÇÃO RELACIONADO A UML:
+ * 
+ * HÁ UM TERMO MUITO IMPORTANTE NO JAVA RELACIONADO A UML CHAMADO:
+ * CONSTANT ESPECIFIC CLASS BODY
+ * OBS1: REALIZANDO UMA SOBREESCRITA DO MÉTODO É POSSIVEL ATRIBUIR VALORES A MAIS DE UMA CONSTANTE 
+ * DENTRO DA CLASSE.
+ * 
  */
 public enum TipoCliente {
-	PESSOA_FISICA(1, " Pessoa Fisica"), PESSOA_JURIDICA(2, " Pessoa Jurídica");
+	// CONSTANT ESPECIFIC CLASS BODY
+	PESSOA_FISICA(1, " Pessoa Fisica"), PESSOA_JURIDICA(2, " Pessoa Jurídica"){
+		public String getID() {
+			return "B";
+		}
+	};
 	private int tipo;
 	private String nome;
 	
@@ -31,6 +45,11 @@ public enum TipoCliente {
 	TipoCliente(int tipo, String nome){
 		this.tipo = tipo;
 		this.nome = nome;
+	}
+	
+	
+	public String getID() {
+		return "A";
 	}
 	
 	//MÉTODO GET
