@@ -5,9 +5,6 @@ public class Vendedor extends Funcionario{
 	
 	private double totalVendas;
 	
-	
-
-	
 	// CONSTRUTOR 
 	public Vendedor() {
 		
@@ -20,6 +17,17 @@ public class Vendedor extends Funcionario{
 		
 	}
 	
+	//MÉTODOS 
+	
+	@Override
+	public void imprime() {
+		System.out.println("Dados impressos do método imprime!");
+		
+	}
+	
+	
+	
+	
 	
 	
 	//SOBRECARGA
@@ -27,6 +35,8 @@ public class Vendedor extends Funcionario{
 		this.salario = salario + (totalVendas * 0.05);
 	}
 	
+	
+
 	//GETTERS AND SETTERS 
 	public double getTotalVendas() {
 		return totalVendas;

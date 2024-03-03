@@ -20,21 +20,26 @@ package classesabstratas.classes;
  * ABSTRATOS  A SUAS CLASSES FILHAS OU CHAMADAS SUBCLASSES SÃO OBRIGADAS
  * A REALIZAR A SOBRECARGA DOS MÉTODOS ABSTRATOS.
  * 
+ * PARTE 02
+ * OBS7: CLASSES ABSTRATAS PODEM EXTENDER OUTRAS CLASSES ABSTRATAS.
+ * OBS8: QUANDO A MAIS DE UMA CLASSE ABSTRATA CRIADA E UMA DELAS É UMA SUPER 
+ * CLASSE DA OUTRA TODOS MÉTODOS ABSTRATOS QUE NÃO FOREM PRE- IMPLEMENTADO.
+ * 
+ * 
  */
 
-public abstract class Funcionario {
-	protected String nome;
+public abstract class Funcionario extends Pessoa {
 	protected String clt;
 	protected double salario;
 	
 	
 	// CONSTRUTORES 
-	
+		
 	public Funcionario() {
 		
 	}
 	
-	public Funcionario(String nome, String clt, double salario) {
+	public Funcionario(String nome,String clt, double salario) {
 		this.nome = nome;
 		this.clt = clt;
 		this.salario = salario;
@@ -43,6 +48,9 @@ public abstract class Funcionario {
 	
 	//MÉTODOS 
 	public abstract void calcularSalario();
+	public void imprime() {
+		System.out.println("Dentro do Imprime do Funcionário!");
+	}
 	
 	// MÉTODO TO STRING 
 	@Override
@@ -51,15 +59,11 @@ public abstract class Funcionario {
 	}
 
 	// GETTERS E SETTERS 
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+	
 	public String getClt() {
 		return clt;
 	}
+
 	public void setClt(String clt) {
 		this.clt = clt;
 	}
