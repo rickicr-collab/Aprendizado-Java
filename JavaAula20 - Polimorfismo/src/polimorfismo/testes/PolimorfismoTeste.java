@@ -1,6 +1,5 @@
 package polimorfismo.testes;
 
-import polimorfismo.classes.Funcionario;
 import polimorfismo.classes.Gerente;
 import polimorfismo.classes.RelatorioPagamento;
 import polimorfismo.classes.Vendedor;
@@ -12,13 +11,12 @@ public class PolimorfismoTeste {
 		Gerente g = new Gerente("Ricardo", 5000, "Gerente", "9432", 2000);
 		Vendedor v = new Vendedor("Fabiana", 2500, "Atendente", "3325", 20000);
 		RelatorioPagamento relatorio = new RelatorioPagamento();
+		// GERANDO OS DADOS DE RELATOIRO EM TELA DAS SUBCLASSES 
 		System.out.println("<<<< Dados impressos ná tela!>>>>");
-		relatorio.relatorioPagamentoVendedor(v);
-		relatorio.relatorioPagamentoGerente(g);
-		
+		relatorio.relatorioPagamentoGenerico(v);
+		relatorio.relatorioPagamentoGenerico(g);;
 		System.out.println("#########################");
-		Funcionario f1 = g;
-		relatorio.relatorioPagamentoGenerico(f1);
+		
 		
 		
 	
