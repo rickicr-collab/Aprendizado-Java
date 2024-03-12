@@ -1,8 +1,12 @@
 package excption.runtimeexception.teste;
 
+import java.awt.AWTException;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.SQLException;
+
+import javax.xml.crypto.dsig.XMLSignatureException;
+import javax.xml.stream.XMLStreamException;
 
 /*
  * TRATAMENTO DE MULTIPLAS  EXCEÇÕES:
@@ -24,39 +28,55 @@ import java.sql.SQLException;
  * SUA SUPERCLASSE PARA REALIZAR O TRATAEMNTO DE EXCEÇÃO DA MESMA. DEVIDO AOS PRINCIPIOS DE 
  * POLIMORFISMO.
  * 
+ * 
+ * TRATAMENTO DE EXCEÇÕES A PARTIR DA VERSÃO 7 EM DIANTE DO JAVA 
+ * 
+ * FUNÇÃO PIP:É UMA FUNÇÃO ONDE UM MÉTODO SENDO TRATADO NO BLOCO TRY AO LANÇÃR UMA EXCEÇÃO
+ * CASO HAJA MAIS DE UMA EXCEÇÃO DELCLARADA ELE IRA SELECIONAR QUAL DAS EXCEÇÕES FOI LANCADA 
+ * É JOGARA NA VARIAVEL E DENTRO DO BLOCO CATCH E DEPOIS ERÁ PARA DENTRO DO BLOCO CATH PARA 
+ * PROSSEGUIR COM O CODIGO ATÉ O FINAL DO PROGRAMA.
+ * 
+ * OBS1: NÃO SE PODE ATRIBUIR UMA NOVA INSTACIA DE EXCEÇÃO DENTRO DE UM BLOCO CATH A PARTIR DA VERSÃO 7
+ * EM DIANTE DO JAVA DEVIDO TER MAIS DE UMA EXCEÇÃO NÃO SE PODE DETERMINAR QUAL EXCEÇÃO SERÁ APLICADA 
+ * ENTÃO DEVIDO A ISSO O JAVA NÃO PERMITE ESSA PRATICA.
+ * 
+ * OBS2: MESMO QUE VOCE ESTEJA FILTRANDO TODAS AS EXCEÇÕES SENDO TRATADAS POR EXCEPTION COMO 
+ * SUPER CLASSE DE SUAS DERIVADAS SUBCLASSES O JAVA APENAS ELA EVITANDO QUE VOCE MULTIPLICASSE
+ * CODIGO.
+ * 
+ * 
  */
 
 public class MultiplasRuntimeExceptionTeste {
 
 	public static void main(String[] args) {
+		talvezLanceException();
+		testandoException();
+			
+	}
+	
+	private static void talvezLanceException() {
+		System.out.println("----------------------------");
+		System.out.println("Dentro do método !!!");
 		try {
-			throw new RuntimeException();
-		}catch(ArrayIndexOutOfBoundsException e) {
-			System.out.println("<<<Dentro ArrayIndexOutOfBoundsException!>>>");
-		}catch(IllegalArgumentException e) {
-			System.out.println("<<<Dentro do IllegalArgumentException!>>> ");
-		}catch(ArithmeticException e) {
-			System.out.println("<<<Dentro do ArithmeticException!>>>");
-		}catch(RuntimeException e) {
-			System.out.println("<<<Dentro do RuntimeException!>>>");
-		}
-		
-		System.out.println("<<<Final do Programa>>.");
-		
-		try {
-			talvezLanceException();
-		}catch(SQLException e) {
-			System.out.println("<<<Dentro do catch SQLException>>>");
-		}catch(IOException e) {
-			System.out.println("<<<Dentro do FileNotFoundException>>>");
+			System.out.println("Teste");
+			throw new SQLException();
+		}catch(Exception e) {
+			System.out.println("<<<Dentro do catch SQLException e IOException e AWTException >>>");
 		}
 		System.out.println("Final do Programa");
 	}
 	
-	
-	
-	private static void talvezLanceException() throws SQLException, FileNotFoundException {
-		System.out.println("<<<Dentro do Método Exception>>>");
+	private static void testandoException() {
+		System.out.println("--------------------------------");
+		try {
+			System.out.println("teste dentro do Try");
+			throw new ArithmeticException();
+			//System.out.println("dentro do bloco try ");
+		}catch(IndexOutOfBoundsException | IllegalArgumentException | ArithmeticException e) {
+			System.out.println("<<<Dentro catch realizando Multicathc!>>>");
+		}
+		System.out.println("<<<Final do Programa>>.");
 	}
 
 }
