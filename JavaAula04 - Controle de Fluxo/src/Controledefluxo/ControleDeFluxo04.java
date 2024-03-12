@@ -9,7 +9,7 @@ public class ControleDeFluxo04 {
 	 */
 	public static void main(String[] args) {
 		System.out.println("Imprimindo dados  em Tela");
-		System.out.println("<<<Cntador Abaixo>>>");
+		System.out.println("<<<Contador Abaixo>>>");
 		int contador = 0;
 		while(contador < 10) {
 			contador++;
