@@ -15,7 +15,7 @@ import checkedexception.classes.Leitor2;
  *  É POSSIVEL ABRIR ARQUIVOS TIPO TEXTO POR EXEMPLO O PROBLEMA É QUE 
  *  QUANDO TENTAMOS ABRIR ELA GEROU UM EXCEÇÃO DE ARQUIVO NAO ENCONTRADO
  *  A EXCEÇÃO DEVE SER TRATADA NORMALMENTE .
- *  A QUESTÃO É QUE TODO ARQUIVO QUE É ABERTO DEVER SER FECHADO POIS O MESMO CONSOME 
+ *  A QUESTÃO É QUE OS ARQUIVO QUE SÃO ABERTO DEVEM SER FECHADO POIS O MESMO CONSOME 
  *  ESPACOS EM MEMORIAR SE HOUVER O MESMO ARQUIVO ABERTO PARA MAIS USUARIOS
  *  AO FECHAR O ARQUIVO É GERADO UMA EXCEÇÃO IOEXCEPTION QUE TAMBEM DEVE SER TRATADA 
  *  POR EXEMPLO NUM BLOCO FINALLY.
@@ -49,10 +49,10 @@ public class TrywithResourcesTest {
 		System.out.println("Metodo Leitor teste");
 		try(Leitor2 leitor2 = new Leitor2();
 			Leitor1 leitor1 = new Leitor1();){
-			
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
+		System.out.println("<<<<Fim do Programa>>>>");
 	}
 	
 	
@@ -71,7 +71,6 @@ public class TrywithResourcesTest {
 					reader.close();
 				}
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
