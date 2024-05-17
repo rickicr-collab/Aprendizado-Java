@@ -5,11 +5,12 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+
 import colecoes.classe.Produto;
 
 class ProdutoNomeComparator implements Comparator<Produto> {
 
-	@Override
+	
 	public int compare(Produto o1, Produto o2) {
 		return o1.getNome().compareTo(o2.getNome());
 	}

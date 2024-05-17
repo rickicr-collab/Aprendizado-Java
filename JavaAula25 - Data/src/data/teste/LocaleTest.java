@@ -72,12 +72,6 @@ public class LocaleTest {
 		System.out.println("Pais: " + localFrance.getDisplayCountry(localFrance));
 		System.out.println("Pais: " + localIndia.getDisplayCountry(localIndia));
 		
-		
-		
-		
-		
-		
-		
 
 	}
 

@@ -1,9 +1,10 @@
 package colecoes.teste;
 
 import java.util.Map;
-import colecoes.classe.Consumidor;
 import java.util.NavigableMap;
 import java.util.TreeMap;
+
+import colecoes.classe.Consumidor;
 
 public class TreeMapTest {
 	
