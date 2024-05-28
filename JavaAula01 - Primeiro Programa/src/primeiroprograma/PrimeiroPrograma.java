@@ -1,4 +1,4 @@
-package PrimeiroPrograma;
+package primeiroprograma;
 
 public class PrimeiroPrograma {
 
