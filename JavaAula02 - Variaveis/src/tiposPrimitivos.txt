@@ -19,12 +19,12 @@ LETRA DA PROXIMA PALAVRA TEM QUE SER MAIUSCULA.
  PARA O TIPO PRIMITIVO CHAR É POSSIVEL UTILIZAR ASPAS SIMPLES OU DUPLAS PARA DECLARAÇÃO DO SEU VALOR.
  
  tipo byte armazena  = 127  a 128 (valores em memoria) / 1byte
- tipo short aramazena  = 32768  to 32767 (valores em memoria) / 2bytes
+ tipo short armazena  = 32768  to 32767 (valores em memoria) / 2bytes
  tipo int armazena = 2.147.483.648 a 2.147.483.647 (valores em memoria) / 4bytes
  tipo long armazena  = 9.223.372.036.854.775.808 a 9223.372.036.854.750.000 (valore em memoria) / 8bytes
  tipo float armazena = 3.4 e - 038 a 3.4 e + 038 (valores em memoria / 4bytes
- tipo double aramazena = 1.7e - 308 a 1.7e + 308 ( valores em memoria ) / 8bytes
- tipo boolean aramazena = true or false  ( valores em memoria ) / 1 bit
+ tipo double armazena = 1.7e - 308 a 1.7e + 308 ( valores em memoria ) / 8bytes
+ tipo boolean armazena = true or false  ( valores em memoria ) / 1 bit
  tipo char armazena = armazena em memeoria (\u0000) / 2bytes.
 
 
