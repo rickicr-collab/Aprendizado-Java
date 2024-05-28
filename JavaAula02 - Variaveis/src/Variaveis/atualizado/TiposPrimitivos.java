@@ -18,7 +18,7 @@ public class TiposPrimitivos {
 		System.out.println("Idade: " + age);
 		System.out.println("Salario double: " + salarioDouble);
 		System.out.println("Salario Float: " + salarioFloat);
-		System.out.println("Idade BYte: " + idadeByte);
+		System.out.println("Idade Byte: " + idadeByte);
 		System.out.println("Idade short: " + idadeShort);
 		System.out.println("Boolean verdadeiro: " + verdadeiro);
 		System.out.println("Boolean falso: " + falso);
