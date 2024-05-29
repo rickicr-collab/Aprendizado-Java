@@ -26,6 +26,10 @@ public class TiposPrimitivos {
 		System.out.println("Numero Long: " + numeroGrande);
 		System.out.println("Caractere Uniccode: " + caractereUnicode);
 	
+		System.out.println("-------------------------------------");
+		System.out.println("<<<< Classe String >>>>");
+		String nome = "Ricardo Rosendo";
+		System.out.println("Classe String: " + nome);
 		
 	}
 	
