@@ -1,6 +1,6 @@
 package teste;
 
-import classes.Estudante;
+import classes.dominio.Estudante;
 
 public class EstudanteTest {
 	/*

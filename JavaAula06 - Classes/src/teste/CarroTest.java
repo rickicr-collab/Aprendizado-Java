@@ -1,6 +1,6 @@
 package teste;
 
-import classes.Carro;
+import classes.dominio.Carro;
 
 public class CarroTest {
 	public static void main(String[] args) {
