@@ -10,8 +10,11 @@ public class PessoaTest {
 		p.nome = "Ricardo";
 		p.idade = 33;
 		p.sexo = "Masculino";
+		System.out.println("A pessoa de nome: [" + p.nome + "]\nTem idade de: [" + p.idade + " anos]\nSexo: [" + p.sexo + "]");
+		System.out.println("--------------------------------------");
+		 
 		
-		System.out.println(" A pessoa de nome: [" + p.nome + "]\n Tem idade de: [" + p.idade + " anos]\n do sexo: [" + p.sexo + "]");
+	
 
 	}
 	
