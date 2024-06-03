@@ -6,7 +6,6 @@ public class Funcionario {
 	public double[] salario;
 
 	public void imprime() {
-		System.out.println("----------------------------");
 		System.out.println("Nome do Funcionário: " + this.nome);
 		System.out.println("Idade do Funcionário: " + this.idade);
 		if (salario == null) {
