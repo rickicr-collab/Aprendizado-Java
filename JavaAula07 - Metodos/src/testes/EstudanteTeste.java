@@ -1,6 +1,8 @@
 package testes;
 
 import classesmetodos.Estudante;
+import classesmetodos.EstudanteNovo;
+
 
 public class EstudanteTeste {
 
@@ -23,6 +25,21 @@ public class EstudanteTeste {
 		a.mediaAluno();
 		b.imprimiDados();
 		b.mediaAluno();
+		
+		System.out.println("------------------------------------------");
+		
+		EstudanteNovo estudante01 = new EstudanteNovo();
+		EstudanteNovo estudante02 = new EstudanteNovo();
+		
+		estudante01.nome = "Midoryia";
+		estudante01.idade = 25;
+		estudante01.sexo = "Masculino";
+		estudante01.imprime();
+		estudante02.nome = "Sakura";
+		estudante02.idade = 20;
+		estudante02.sexo = "Feminino";
+		estudante02.imprime();
+	
 		
 	
 

@@ -13,6 +13,7 @@ public class Professor {
 	public String matricula;
 	public String rg;
 	public String cpf;
+	public String disciplina;
 	
 	
 	/*

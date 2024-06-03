@@ -34,9 +34,13 @@ public class Calculadora {
 		double resultado =  num1 / num2;
 		// CRIANDO UMA CONDIÇÃO ONDE NUM2 É DIFERENTE DE 0
 		if(num2 != 0) {
+			System.out.println("O resultado: " + resultado);
 			return resultado;
 		}
+		System.out.println("Não é possivel dividir por Zero!");
 		return 0;
+		
+		
 	}
 	
 	//MÉTODO PARA RETORNAR A OPERAÇÃO NORMAL 
