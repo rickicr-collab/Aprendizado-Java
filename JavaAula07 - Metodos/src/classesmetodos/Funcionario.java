@@ -12,7 +12,7 @@ public class Funcionario {
 			System.out.println("Salario não Informado!");
 			return;
 		}
-		for(int aux = 0; aux < salario.length; aux++) {
+		for (int aux = 0; aux < salario.length; aux++) {
 			System.out.println("Salario " + (aux + 1) + " Valor : [" + salario[aux] + " R$]");
 		}
 		mediaSalario();
