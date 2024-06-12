@@ -8,5 +8,6 @@ package associacao.classes;
  * 
  */
 public class Departamento {
-	private Pessoa[] pessoas;	
+	private Pessoa[] pessoas;
+	
 }
