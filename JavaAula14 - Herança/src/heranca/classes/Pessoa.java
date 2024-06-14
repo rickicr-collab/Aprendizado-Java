@@ -25,13 +25,6 @@ public class Pessoa {
 	protected String rg;
 	protected Endereco endereco;
 	
-	
-	
-	public Pessoa(String nome) {
-		System.out.println("Dentro do construtor Pessoa");
-		this.nome = nome;
-	}
-	
 	static{
 		System.out.println("Bloco de Inicialização Estático de Pessoa");
 	}
@@ -42,6 +35,13 @@ public class Pessoa {
 	{
 		System.out.println("Bloco de Inicialização 2 ");
 	}
+	
+	public Pessoa(String nome) {
+		System.out.println("Dentro do construtor Pessoa");
+		this.nome = nome;
+	}
+	
+	
 	
 
 	

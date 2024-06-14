@@ -1,21 +1,24 @@
 package heranca.classes;
 
-public class Endereco {
+public class Endereco  {
+	
 	private String rua;
 	private String bairro;
 	
 	
 	
-	
+
+
+
 	//MÉTODO
 	public void imprimir() {
 		System.out.println("Rua: " + this.rua);
 		System.out.println("Bairro: " + this.bairro);
 		
+		
 	}
 	
 
-	
 	
 	//METODOS GETTERS AND SETTERS
 	public String getRua() {

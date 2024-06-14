@@ -27,7 +27,7 @@ public class Funcionario extends Pessoa {
 	}
 	
 	public void imprimirReciboPagamento() {
-		System.out.println("Eu " + super.nome + " Recebi o pagamento de : " + this.salario + " R($)");
+		System.out.println("Eu " + this.nome + " Recebi o pagamento de : " + this.salario + " R($)");
 	}
 	
 
