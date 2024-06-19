@@ -1,64 +1,57 @@
 package enumeracao.classes;
 
-/* PARTE 1
- * TRABALHANDO COM A FUNÇÃO ENUMERATE DENTRO DO JAVA 
- * PARA EVITAR CASOS ONDE VOCE NÃO NECESSITA DE VARIAVVEIS STATICAS FINAIS 
- * PARA SE TRABALHAR NUM DETERMINADO PROJETO FOI CRIADO O TIPO ESPECIAL DE ATRIBUTO / CLASSE
- * CHAMADO ENUMERAÇÕES OU ENUMERATE A PARTIR DO JAVA 5
- * AO CRIAR UM NOVO OBJETO NO METODO PRINCIPAL MAIN VOCE INSTANCIA O ATRIBUTO 
- * DA CLASSE ENUMERADA TIPO CLIENTE COMO SE TIVESSE INSTANCIAOD UM ATRIBUTO DE CLASSE
- * OBS:NÃO PODE PASSAR O ATRIBUTO COMO TIPO PRIMITIVO POIS DARÁ UM ERRO DE COMPILAÇÃO.
- * 
- * PARTE 2
- * OBS:EXISTE A OPCÃO DE VC INFORMAR OA PARAMENTROS DA CLASSE TIPOCLINTE DENTRO DA CLASSE CLIENTE
- * OBS2: VOCE TAMBEM PODE CRIAR UMA NOVA ENUMERAÇÃO DENTRO DE UMA CLASSE DESDE QUE SIGA AS REGRAS DE CONVERSÃO NORMAIS ESTABELECIDAS.
- * OBS3: VOCE TAMBEM PODE COLOCAR MODIFICADORES DE ACESSO NAS ENUMERAÇÕES DECLARADAS EM UMA CLASSE.
- * OBS4: NÃO É POSSIVEL OU PERMITIDO CRIAR UMA ENUMERAÇÃO DENTRO DE UM METODO O JAVA E A JVM IMPEDE A CRIAÇÃO DO MESMO.
- * OBS5: COMO A ENUMERAÇÃO É UM TIPO DE CLASSE ESPECIAL É POSSIVEL ADICIONAR ATRIBUTOS E MÉTODOS A MESMA.
- * OBS6: VOCE NÃO PODE INICIALIZAR OU CHAMAR UM CONSTRUTOR DE UMA ENUMERAÇÃO ELE CHAMA A SI PROPIO.
- * OBS7: VOCE PODE CRIAR ATRIBUTOS MAIS NUNCA UMA LINHA ANTES DAS CONSTATES DA ENUMERAÇÃO POIS SERÁ DADO UM ERRO DE COMPILAÇÃO.
- * OBS8: AO SE DECLARAR UM CONSTRUTOR NUMA ENUMERAÇÃO VOCE TEM QUE ESPECIFICAR PARA CADA CONSTATE UM VALOR DECLARADO
- * PELO TIPO PRIMITIVO DO ATRIBUTO.
- * OBS9: VOCE PODE ATRIBUIR MAIS UM TIPO DE VALOR PARA AS CONSTANTES DE UMA ENUMERAÇÃO
- * 
- * PARTE 3 
- * ENUMERAÇÃO RELACIONADO A UML:
- * 
- * HÁ UM TERMO MUITO IMPORTANTE NO JAVA RELACIONADO A UML CHAMADO:
- * CONSTANT ESPECIFIC CLASS BODY
- * OBS1: REALIZANDO UMA SOBREESCRITA DO MÉTODO É POSSIVEL ATRIBUIR VALORES A MAIS DE UMA CONSTANTE 
- * DENTRO DA CLASSE.
- * 
- */
 public enum TipoCliente {
 	// CONSTANT ESPECIFIC CLASS BODY
-	PESSOA_FISICA(1, " Pessoa Fisica"), PESSOA_JURIDICA(2, " Pessoa Jurídica"){
+	PESSOA_FISICA(1, " Pessoa Fisica"), PESSOA_JURIDICA(2, " Pessoa Jurídica") {
 		public String getID() {
 			return "B";
 		}
 	};
+
 	private int tipo;
-	private String nome;
-	
-	
+	private String nomeRelatorio;
+
 	// CONSTRUTOR
-	TipoCliente(int tipo, String nome){
+	TipoCliente(int tipo, String nomeRelatorio) {
 		this.tipo = tipo;
-		this.nome = nome;
+		this.nomeRelatorio = nomeRelatorio;
 	}
-	
-	
+
+	public static TipoCliente tipoClientePorNomeRelatorio(String nomeRelatorio) {
+		for (TipoCliente tipoCliente : values()) {
+			if (tipoCliente.getNomeRelatorio().equalsIgnoreCase(nomeRelatorio)) {
+				System.out.println("Nome do relatoiro: " + tipoCliente);
+				return tipoCliente;
+			}
+		}
+		return null;
+
+	}
+
 	public String getID() {
 		return "A";
 	}
-	
-	//MÉTODO GET
+
+	// MÉTODO GET
 	public int getTipo() {
 		return this.tipo;
 	}
-	
+
 	public String getNome() {
-		return this.nome;
-		
-	}	
+		return this.nomeRelatorio;
+
+	}
+
+	public String getNomeRelatorio() {
+		return nomeRelatorio;
+	}
+
+	public void setTipo(int tipo) {
+		this.tipo = tipo;
+	}
+
+	public void setNomeRelatorio(String nomeRelatorio) {
+		this.nomeRelatorio = nomeRelatorio;
+	}
+
 }

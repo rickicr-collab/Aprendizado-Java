@@ -1,0 +1,29 @@
+Interfaces:
+
+ -  seu intuito inicial seria de servir como contratos.
+ -  quando o java foi criado até a versão 7 era necessário criar classes abstratas para usar métodos abstratos nas classes.
+ -  a partir do java 8 tudo mudou com a criação das interfaces onde você pode criar métodos concretos dentro de uma interface.
+ 
+ obs: não é possivel colocar o modificador final dentro de uma interfaçe pois é gerado um erro de compilação como uma modificação 
+ ilegal pois a interface é como um contrato e para o java sua estrutura não permite essa ação interna pois elas foram feitas para serem 
+ implementadas.
+ 
+ obs1: assim como na herança todos os métodos implementados dentro de uma interface por serem abstratos eles serão obrigatórios em classe
+ que as implementam caso contrario é gerado um erro de compilação.
+ obs2: interfaces permitem o uso da multipla implementação desde que os metodos internas das interfaces implementadas sejam sobre-escritos.
+ obs3: não existe um limite para quantas interfaces podem ser implementadas diferente das classes utilizando herança onde so pode haver 
+ uma unica classe extendida.
+ obs4: a partir do java 8 foi introduzido no java a capacidade de utilizar métodos concretos dentro de interfaces sem quebrar o codigo dos 
+ desenvolvedores e mantendo a compatibilidade com versões anteriores utilizando o modificador default.
+ obs5: interfaces não permitem que sejam criados bloco de inicialização.
+ obs6: você não pode criar objetos de uma interface.
+ obs7: não se pode colocar um modificador de acesso mais restritivo que o que foi declarado dentro da interface pai.
+ 
+ hierarquia de modificadores
+  - private: modificador mais restritivo
+  - default / package : modificador padrão quando nenhum é declarado 
+  - protected: modificador com restrição padrão e podendo ser implementado em métodos de subclasses
+  - public: modificador menos restritivo e utilizado na maior parte para métodos implementados em interfaces.
+ 
+ obs8: é possivel delcarar variaveis dentro de uma interface , no entanto todas as variaveis declaradas serão constantes.
+ obs9: a partir do java 8 foi permitido que dentro de uma interface fosse possivel criar métodos estaticos.

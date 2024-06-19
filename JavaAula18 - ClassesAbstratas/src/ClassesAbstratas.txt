@@ -1,0 +1,30 @@
+Classes Abstratas:
+
+  - As classes abstratas foram criadas para se resolver problemas de designe e codigos não de arquitertura no entanto mais designe
+  do proprio codigo do desenvolvedor.
+  
+  - classes abstratas são classes que não deveriam existir em teoria mais são criadas para extender suas funções em suas
+  subclasses e utilizadas como um template.
+  
+  obs: classes abstratas não podem instancias novos objetos pois foi feito para serem extendidos.
+  obs: classes abstratas não podem possuir o modificador final devido a conflito de funções
+  - modificador final  → não permitir a extenssão de uma classe devido a ela se tornar perfeita para o java
+  - modificador abstract → permitir a herança de uma classe mais sem instancia objetos da mesma em seu construtor.
+  
+  ** Metodos Abstratos **
+  
+  -  métodos abstratos quando implemtados em uma super classe todas as suas subclasses precisam implementar o método 
+  criado caso contratio é gerado um erro de compilação por causas dos métodos abstratos criados na super classe não 
+  implemtados pelas subclasses.
+  
+  - classes abstratas permitem tanto métodos concretos a métodos abstratos no entanto classes concretas só permitem 
+  métodos concretos caso contratio é gerador um erro de compilação impossibilitando a implementação de métodos abstratos 
+  em classes contetas.
+  
+  ** Regras Métodos abstratos 
+  - caso uma classe abstrata extenda a funcionalidade para outra classe abstrata você não é pbrigado a implementar os 
+  metodos abstratos da super classe.
+  obs: no entanto a subclasse que é uma classe abstrata sobreescrever o método abstrato  todas as suas classes filhas 
+  não precisam sobreescrever este método pois elas teram acesso ao mesmo devido a heranca.
+ 
+ 

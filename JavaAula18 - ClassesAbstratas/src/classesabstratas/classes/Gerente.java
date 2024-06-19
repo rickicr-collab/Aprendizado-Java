@@ -3,8 +3,6 @@ package classesabstratas.classes;
 public class Gerente extends Funcionario{
 	
 	
-	
-	
 	//CONSTRUTOR
 	public Gerente() {
 	}
