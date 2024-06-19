@@ -1,0 +1,18 @@
+polimorfismo:
+
+ - a função do polimorfismo é trocar a variavel de referencia e ainda sim utilizar outros objetos(multiplas formas).
+ - atraves do polimorfismo você pode acessar os metodos e atributos da subclasse sem perder sua identidade como superclasse.
+ - atraves do uso do polimorfismo é possivel criar métodos genericos que abordam todos os tipos de objetos criados pela subclasses
+ que possuem uma superclasse em comum extendida.
+ 
+ obs1: caso você precisa especificar algo que exista em uma subclasse como atributo de escopo ao utilizar o polimorfismo é necessario 
+ especificar que quando a variavel de referencia da superclasse instanciar uma subclasse especifica pode ser realizado alguma operação 
+ detereminada pela subclasse isso está restrigindo uma determinada operação para que o java não entre em conflito caso vc tente acessar 
+ algo da subclasse usando como paramentro a superclasse mais generalizada utilizado métodos mais generalizados.
+ 
+ obs2: quando se trabalha com programação orientada a interface é possivel utilizar o principio do polimorfismo pois a interface tem
+ possibilidade de possuir multiplas implementações então é possivel utilizar uma interface instanciando qualquer uma subclasse que a
+ implementou.
+ 
+ obs3: Ao utilizar o polimorfismo orientado a interface possibilita utilizar o método arraylist que fornece uma gama de funções para 
+ se trabalhar com grande quantidades de dados fornecendo uma gama ampla para manutenção mais estavel
