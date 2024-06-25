@@ -1,11 +1,17 @@
 package checkedexception.classes;
 
-public class Leitor2 implements AutoCloseable {
+import java.io.Closeable;
+import java.io.IOException;
 
-	@Override
-	public void close() throws Exception {
-		System.out.println("Fechando Leitor 2 ........");
-		
-	}
+public class Leitor2 implements Closeable {
+
+    @Override
+    public void close() throws IOException {
+	System.out.println("Fechando Leitor 2 .......");
+	
+    }
+
+   
+	
 
 }

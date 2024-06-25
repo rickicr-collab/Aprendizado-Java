@@ -1,0 +1,87 @@
+Exceções:
+
+ - Exceções são fluxos anormais que ocorrem dentro do seu codigo.
+ - o java oferece muitas ferramentas e meios para que sejam tratados esses fluxos anormais do seu codigo.
+ - no java todas as classes são objetos e a mais das classes nesse aspecto seria a classe throwable que possui suas subclasses
+  * classe exception: que possui todas as suas subclasses e categorias
+  * classe ERRO: que são situações que não se podem ser tratadas erros que vão acontecer independetemente de qualquer ação tomada
+  pois so podem se tentar resolver  parando a execução do programa.
+  
+  ** RunTime Exception **
+  
+  - quando se trata de exceções existem dois tipos de exceções possiveis que são exceptions tipo checked /  unchecked.
+   * checked: são exceções diretas da classe exception e geram um erro em tempo de compilação devido a isso nem é possivel executar seu codigo
+   com isso obrigando você a realizar o tratamento de exceção antes de realizar a execução do codigo.
+   * uncheked: são exceções que são filhas da classe exception como por exemplo classe runtimeexception que quando são lancadas em tempo de execução
+   são ocasionadas por erros de programação do desenvolvedor.
+  
+ ** tratamento de exceções **
+ 
+ - utilizando um recurso chamado tryResources é possivel realizar o tratamento das exeções checked em tempo de execução
+ para que apesar da execução acontecer não interromper totalmente a execução do seu programa ( é pobrigatorio sinalizar na assinatura do método
+ que tipo de exceção pode ser gerada ao executa-lo).
+ - para exceções do tipo RunTimeException onde não são obrigados os tratamentos voç~e pode criar mini tratamentos sem necessidade de lançar um
+ try/catch.
+ 
+ ** Pro e contras usando tratamento com try / catch **
+ 
+ - 1º pro: é que o codigo irá continuar a execução mesmo que a exceção seja gerada. 
+ - 1º contra: e que aquele que chama o codigo não tem como realizar o tratamento do seu proprio jeito.
+ 
+ obs: se você estiver utilizando um método privado provavel que se utilize um try/catch (varia muito de projeto para projeto).
+ obs2: se por acaso a exceção foi tratada mais devido a algo ocorreu um erro é possivel ele jogar novamente a execeção para ser
+ tratada novamente dentro do método.
+ 
+ 
+ ** Estrutura do Bloco Try / Catch / finally **
+ Primeiro Bloco try: 
+  - o bloco onde irá existir a função ou método a ser executado que pode gerar uma exceção.
+ 
+ Segundo Bloco cathc:
+  - O bloco onde irá pegar a exceção gerada e atribuida a uma variavel referenciado a exceção
+ aplicada para ser tratada(Recomendado realizar o tratamento para o tipo especifico de execeção como boas praticas).
+  - Um bloco que não pode ficarm em branco pois é ele que vai mostrar que existe uma exceção sendo tratada para outras pessoas que irão 
+  realizar manutenção futura no codigo.
+  - Evitar colocar a logica de negocio em bloco catch é um local apenas para informação sobre os tratamentos de exceções.
+  
+ Terceiro Bloco finally:
+  - Bloco que irá executa determinada ação independente do exceção que for gerada e tratada.
+  - Muito usado para métodos que fazem uso de outras aplicações como conexão com banco de dados e que sempre precisa fechar a conexão. 
+  
+  
+  ** tratamento de Multiplas exceções **
+  - é possivel realizar o tratamento de mais de uma exceção.
+  
+  obs1: ele sempre vai busca o tratamento que mais se adequa a exceção gerada tambem fazendo uso do polimorfismo.
+  obs2: não se pode colocar um tipo mais generico a frente dos catch mais especificos porque caso a exceção mais generica esteja a frente das
+  mais especificas ela irá referenciar as mesmas por causa do uso do polimorfismo e sempre tera prioridade acima das especificas.
+  obs3: é possvel realizar multiplos catches com exceções que não são da mesma linha de herança com o multi catch usando modelo multycatchType.
+  
+  ** Try with resources **
+  - é possivel realizar um try dentro de outra try permitindo tratamento de exceções mais genericas mesmo já havendo exceções mais especificas 
+  de uma classe sem criar um conflito interno.
+  - utilizando o método try with resource é possivel instanciar uma varivavel de referencia e ao mesmo tempo fecha-lo quando seu uso for finalizado,
+  no entanto so é aplicavel para classes que implementam a interface readable e closeable pois essas interfaces realizam essas dentro do try with resources.
+  - o java ao realizar o autocloseable interno sempre irá realizar o fechamento da forma inversa do ultimo a ser implementado ao primeiro.
+  - com este recurso é possivel realizar a abertura e fechamento de processos apenas atentado as exceções especificas de cada processo ou objeto executado
+  dentro do try.  
+  
+  ** Exceptions Customizadas **
+  
+  -  nem sempre o java irá possuir a exceção que você deseja tratar devido a isso é possivel criar suas proprias execeções customizadas.
+  - ao criar uma classe para tratar uma exceção especifica geralmente no nome da classe para criar a exceção customizada o nome exception
+  vem por ultimo apos o nome da exceção a ser customizada.
+  - toda a exceção customizada deve - se extender a uma exceção já existente ou do tipo checked ou do tipo unchecked
+  - geralmente ao realizar exceções do tipo customizadas em sua maioria são do tipo checked e precisa declarar a exceção na linha do método
+  para que o metodo final a chamar o método original a possa declarar a nota na linha do mpétodo ou encapsular dentro de um try catch.
+  
+  ** Regras para sobre escrita **
+  
+   - Ao sobre escrever um método de uma super classe em que nela contem exceções do tipo checked você não é obrigado a lancar as mesmas 
+   exceções porque as implementacoes do método dentro da classe filha podem ser diferentes e não obrigatoriamente lancada as mesmas exceções .
+   - é possivel tambem sobre escrever exceções do tipo runtime exceptions que não forcam o tratamento d=na hora da chamada do método e nem 
+   precisa delcara na assinatura do método.
+   obs: não é possivel declarar exceções mais genéricas das que foram declaradas no método original porem nas sobre escritas dentro das 
+   classes filhas é possivel de realizar essa declaração.
+  
+ 
