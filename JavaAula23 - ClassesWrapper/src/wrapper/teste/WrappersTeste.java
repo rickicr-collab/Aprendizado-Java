@@ -1,34 +1,10 @@
 package wrapper.teste;
 
-/*
- * CLASSES WRAPPERS:
- * 
- * CLASSES PRIMITIVAS DO JAVA;
- * byte/ short/ int/ long/ float/ double/ char/ boolean:
- * 
- * CLASSES WRAPPER DOS TIPOS PRIMITIVOS:
- * Byte/ Short/ Integer/ Long/ Float/ Double/ Character/ Boolean: 
- * 
- * OBS: A CLASSE BYTE SO ACEITA VALORES ATÉ 127 BYTES ACIMA DISSO GERA UM ERRO DE COMPILAÇÃO
- * OBS: NÃO É POSSIVEL UTILIZAR CASTING PARA ALGUMAS CLASSE DEVIDO SUA IMCOPATIBILIDADE 
- * EM RELAÇAO A VALOR DE MEMORIA COMO POR EXEMPLO UM INT SER UM LONG.
- * 
- * OBS: QUANDO SE TEM CLASSES DA MESMA LINHA HORIZONTAL NÃO SE PODE USAR POLIMORFISMO 
- * É O CASO DAS CLASES LONG, DOUBLE E FLOAT.
- * 
- * AUTOBOXING E UNBOXING:
- * 
- * AUTOBOXING → É PEGAR UM VALOR DE TIPO PRIMITIVO E TRANSFORMA-LO EM WRAPPER.
- * UNBOXING → 
- * 
- * 
- */
-
 public class WrappersTeste {
-
+    
 	public static void main(String[] args) {
 		
-		//CLASSES PRIMITIVAS
+		
 		byte bytePrimitivo = 1;
 		short shortPrimitivo = 1;
 		int intPrimitivo = 10;
@@ -38,7 +14,7 @@ public class WrappersTeste {
 		char charPrimitivo = 'A';
 		boolean booleanPrimitivo = true;
 		
-		//CLASSES WRAPPER
+		
 		Byte byteWrapper = 1;
 		Short shortWrapper = 2;
 		Integer integerWrapper =10;
@@ -54,13 +30,45 @@ public class WrappersTeste {
 		System.out.println(Character.isUpperCase('B'));
 		System.out.println(Character.isLowerCase('A'));
 		System.out.println(Character.toUpperCase('a'));
+		System.out.println(Character.forDigit(intPrimitivo, charPrimitivo));
+		System.out.println(Character.isIdeographic(charPrimitivo));
+				
 		
 		
+		System.out.println("----------------------------------------------------");
+		
+		System.out.println("Tipo byte Primitivo: " + bytePrimitivo);
+		System.out.println("Tipo short Primitivo: " + shortPrimitivo);
+		System.out.println("Tipo int Primitivo: " + intPrimitivo);
+		System.out.println("Tipo Long Primitivo: " + longPrimitivo);
+		System.out.println("Tipo float Primitivo: " + floatPrimitivo);
+		System.out.println("Tipo double Primitivo: " + doublePrimitivo);
+		System.out.println("Tipo char Primitivo: " + charPrimitivo);
+		System.out.println("Tipo boolean Primitivo: " + booleanPrimitivo);
+		
+		System.out.println("----------------------------------------------------");
+		
+		System.out.println("Tipo Byte Wrapper: " + byteWrapper);
+		System.out.println("Tipo Short Wrapper: " + shortWrapper);
+		System.out.println("Tipo Integer Wrapper: " + integerWrapper);
+		System.out.println("Tipo Long Wrapper: " + longWrapper);
+		System.out.println("Tipo Float Wrapper: " + floatWrapper);
+		System.out.println("Tipo Double Wrapper: " + doubleWrapper);
+		System.out.println("Tipo Character Wrapper: " + charWrapper);
+		System.out.println("Tipo Boolean Wrapper: " + booleanWrapper);
 		
 		System.out.println("\n--------------------------------");
 		String valor = "10";
 		Integer f = Integer.parseInt(valor);
 		System.out.println("Resultado: " + f);
+		
+		System.out.println("----------- Convertendo valores de String -----------------");
+		
+		Integer intW = Integer.parseInt(valor);
+		System.out.println("Valor Convertido para Integer: " + intW);
+		Boolean verdadeiro = Boolean.parseBoolean("True");
+		System.out.println("Valor COnvertido para Boolean: " + verdadeiro);
+		
 
 	}
 

@@ -1,0 +1,27 @@
+Classes Wrapper:
+
+ - As classes Wrappers são objetos que encapsulam os tipos primitivos, no entanto das classes wrapper tipo numericos são extenções da classe number
+ e por ser uma extensão segue todas as regras de um objeto assim como a regra do polimorfismo.
+ 
+ - nas classes primitivas são aplicadas as gregras de tamanho em bytes em memoria e nas classes wrappers são aplicadas as regras da classe Object como o
+ polimorfismo por exemplo.
+ 
+ - O motivo para ser criada as classes Wrappers é porque com elas é possivel passar valores como uma referencia e não como bytes em mémoria podendo utilizar 
+ as propriedades e métodos da classe Object.
+ 
+ obs1: a classe Wrapper do tipo Byte so pode aceitar valores do tipo byte até 127 devido ser o valor mais alto para o byte, acima disso
+ é considerado um valor inteiro.
+ obs2: a classe long precisa do caractere 'L' para poder indentificar um valor do tipo Long ao retirar esse caractere é gerando um erro de compilação 
+ pois o valor long não pode ser um integer devido as regras de polimorfismo. 
+ 
+ 
+ ** AutoBoxing **
+ 
+  - E quando você possui um tipo primitivo e faz com que o java transforme esse tipo primitivo em um tipo Wrapper.
+ 
+ ** Unboxing **
+ 
+  - E quando você possui um tipo Wrapper pega esse valor e pede ao Java para transformar o tipo Wrapper em um tipo primitivo.
+  
+  obs3: todas as classes Wrappers possuem uma função chamada Parse() onde é possivel converter uma string em seus respectivos valores de classe a unica que não
+  possue esse método de forma nativa é o Character, e tambem é caseInsensitive ele desconsiderar letras maiusculas e minusculas.
