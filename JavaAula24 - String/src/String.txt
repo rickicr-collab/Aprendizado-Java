@@ -1,0 +1,27 @@
+String propriedades:
+
+ - Uma coisa importante no java é que string são imutaveis, devido a ser criada e armazenada em uma piscina constante de string (Constant String pool).
+ - devido a isso não é possivel realizar uma alteração de uma string criada.
+ - caso você crie uma nova variavel de referencia com o mesmo valor de uma existente o java apenas devolverar a variavel de referencia contendo o mesmo valor 
+ pois não pode haver valores duplicados dentro de um pool de string serão duas variaveis de referencia linkadas aa mesma string com variaveis diferentes.
+ - ao utilizar o construtor new() para criar uma nova string de um valor que já existe dentro da pool de strings você ta pegando uma copia e está encapsulando o
+ valor original que está dentro da pool de string para retornar o valor original dentro da pool de string pode ser utilizado o metodo padrão da classe string
+ chamado intern().
+ 
+ obs: para trocar o valor que existe é preciso fazer uma nova associação.
+ 
+ *Classe String Builder → criado para melhorar o desempenho de altas quantidades de string sendo processadas em mémoria com o intuito não haver perda de 
+ desempenho em sistemas ou programas devido a perda de mémoria de processamento.
+ 
+ *Classe String Buffer → criado com o mesmo principio da classe String Builder , no entanto com foco em ambientes onde existem varios threads em processamento
+ simultaneos em paralelo.
+ 
+ 
+ Obs: 
+ * Recomendação o usos dessas classe 
+  - String : nos maioria dos casos você irá utilizar a classe string para realizar o mapeamento das regras de negocio do seu projeto entretanto o desempenho
+  não é o melhor a ser apresentado.
+  - String Builder: é utilizado quando se necessita melhorar a perfomace da aplicação para conseguir alto desempenho pois trabalha com microdesempenho e assim
+  aumentando sua complexidade. 
+  - String buffer:  é utilizado nos casos quando se necessita de um grande desempenho e melhoria na perfomace assim como string builder tornando mais complexo 
+  as regras de negocio.

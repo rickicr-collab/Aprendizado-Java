@@ -46,7 +46,7 @@ public class StringPerfomaceTeste {
 		String test = "";
 		for(int i = 0; i < tam; i++) {
 			test += i;
-			//System.out.println("Resultado da concatenação: " + test);
+			System.out.println("Resultado da concatenação: " + test);
 		}
 	}
 	
@@ -55,7 +55,7 @@ public class StringPerfomaceTeste {
 		StringBuilder sb = new StringBuilder(tam);
 		for(int i = 0; i < tam; i++) {
 			sb.append(i);
-			//System.out.println("Resultado da concatenação: " + sb);
+			System.out.println("Resultado da concatenação: " + sb);
 		}
 	}
 	
@@ -64,7 +64,7 @@ public class StringPerfomaceTeste {
 		StringBuffer bf = new StringBuffer(tam);
 		for(int i = 0; i < tam; i++) {
 			bf.append(i);
-			//System.out.println("Resultado da concatenação: " + bf);
+			System.out.println("Resultado da concatenação: " + bf);
 		}
 	}
 	
