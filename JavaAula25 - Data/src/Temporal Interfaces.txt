@@ -1,0 +1,17 @@
+Interfaces temporais:
+
+ ** Interface TemporalAdjuster **
+  - è uma interface qeu trabalha com com apenas um unico método.
+  - no entanto existe uma classe TemporalAdjusters que possue varios métodos staticos para se trabalhar com
+  valores temporais.
+  
+  <<  Classe Tempral Adjusters >>
+  - quando se quer trablahr com datas especificas realizando relatórios mensais fixos é uma boa opção utilizar classe Temporal Adjusters.
+  
+  * métodos da Classe Temporal Adjusters *
+  - Utilizando a função nextOrSame() → ele devolve o dia da semana declarado com argumento se vc estiver do dia exato ou mais proximo.
+  - Utilizando a função next() → ele devolve apenas o dia mais proximo juntamente com a data daquele dia. 
+  - Utilizando a função previous() → ele devolve quando foi o ultimo data do dia da semana declarado cpmo argumento.
+  - utilizando a função previousORSame() → ele segue os principios da nextORSamae mais para o método previous.
+  
+  

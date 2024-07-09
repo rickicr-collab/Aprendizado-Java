@@ -1,0 +1,10 @@
+Classe Period:
+
+ - é uma classe onde você pode realizar tratamento de datas e tempo tempo será com mais eficácia.
+ 
+ obs1: A classe Period não é compativel utilizando a função between com a classe LocalDateTime.
+ 
+ obs2: Para realizar a tarefa de verificar os valores de dias em meses a classe Period não possue um retorno estavel pois em sua documentação
+ os valores limites para tratamento de dias não é estavel então o retorno na maioria sempre será 1.
+ 
+ obs3: Para trata de valores buscados a partir de outros valores pode-se utilizar a Interface ChronoUnit

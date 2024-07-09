@@ -1,0 +1,94 @@
+Classe utilitarias:
+
+ [ Classes Date -  Locale / Local ]
+ 
+ ** Classe Date **
+ - A Classe Date é uma das mais utilizadas dentro do java e sempre foi reformulada desde sua criação por não possuir ferramentas suficientes para
+ atender toda a demanda que possuia nos modelos de projetos existentes no mercado.
+ - No Java 8 foi criado um pacote inteiro para se trabalhar inteiramente com a classe chamado DateFormat.
+ - A maioria dos métodos da classe Date já foi depreciado e provavel que num futuro proximo será retirado permanentemente da bliblioteca do java.
+ 
+ obs: Um dos problemas que fez com que a classe Date tivesse sido depreciada com o tempo foi capacidade de não se trabalhar com internacionalização.
+ 
+ -----------------------------------------
+ ** Class Calendar **
+  - Criada para substituir as deficiencias existentes na classe Date com muitos mais métodos existente e podendo ser trabalhado com internacionalização.
+  - Utilizando a classe calendar é possivel utilizar varioas métodos uteis para se possuir dados como por exemplo (saber o dia da semana , dia do mês ou 
+  ate do ano) , possivel tambem alterar as horas aumentando seus valores com diminuindo sem realizar qualquer alteração no horario fonte do sistema.
+  
+ ---------------------------------------
+ ** Class DateFormat **
+  - Classe criada para formatação e edição de datas para substituir a antiga classe Date que possui a maioria dos seus métodos já descontinuado.
+  - usando a classe DAteFormat é possivel utilizar quatro estilos de formatação para utilização na Data:
+   * Short → mostra a data no formato original
+   * Medium → mostra a data com acrescimo do nome do mês abreviado
+   * Long → mostra a data formatada com nome do mês completo
+   * Full → mostra a data formatada com nome do mês e dia da semana.
+ --------------------------------------  
+ ** Class Locale **
+  - Classe criada para trabalhar com internacionalização de datas, moedas, numeros baseado nas preferencias do usuario ou da JVM.
+  - A mesmas possuem duas ISO:
+   * A Primeira ISO 639 → você determina a lingua que esta localidade possue.
+   * A Segunda ISO 3166 → voce^determina a lingua e o pais da localidade.
+   
+  Obs: É possivel realizar formatações para as datas usando as linguagems de varias localidades , no entanto sempre é bom verificar 
+  qual lingua está usando no pais do sistema ou programa está em uso e verificar atualziações nos padrões ISO de linguagem.
+  
+  obs:  é possivel visualizar a linguagem de origem de uma determinada localidade usando o método getDisplayCountry(), 
+  no entanto é possivel verificar essa mesma linguagem para o padrão de outra linguagem colocando como parametro no mesmo
+  método a localidade ex: getDisplayCountry(Locale Italy) → com isso é possivel ver a linguagem na forma italizana de pronuncia
+  e escrita.
+  ------------------------------------
+  ** Class NumberFormat **
+  - Classe criada para formatação de numeros e moedas de forma internacionalizada baseado nas preferencias do Usuario ou da JVM como 
+  no caso da classe Locale.
+  
+  - É possivel realizar formatação de forma para padrões internacionais em moedas visto que alguns países possuem suas proprias moedas
+  financeiras como o Brasil.
+  
+  obs: existe possibilidades de você formatar os valores de forma a limitar os digitos fracionados para melhorar a leitura do valor.
+  
+  obs2: deve-se ter cuidade para se trabalhar com moedas pois , para o caso de usar valores em String para realizar a conversão para 
+  outros valores é necessário utilizar o formato para a moeda especifica que se deseja realizar a conversão.
+  ---------------------------------------
+  ** Simple Date Format **
+  
+  - Criada a partir da versão 1.4 do java uma subclasse pertencente a classe DateFormat que age de forma mais flexivel por não ser uma classe 
+  abstrata e apresentar varios métodos para formatar uma data utilizando Letras especificas para especificas formatações nas datas contendo
+  toda a lista de funções das letras na sua documentação.
+  
+  ----------------------------------------
+  ** Class LocalDate **
+   - Criada a partir da Versão 8 do Java criado para bliblioteca interna Time para resolver problemas de intancias da biblioteca Calendar 
+   pois ao intanciar um calendario éra gerado informações do calendario Gregoriano de forma complexa foi devido a essa e outras circunstancias
+   que a biblioteca LocalDate foi criada.
+   
+   obs1:  a bliblioteca localdate só trabalha com a data em si não se pode trbalhar com a hor autilizando essa biblioteca.
+   
+   obs2:  sendo uma classe imutavel não é possivel realizar instancias com suas variaveis de escopo da classe devido modificador de classe
+   final.
+   
+   ----------------------------------------
+  ** Class LocalTime **
+   - Uma classe onde voce pode ter mais recursos para se trbalhar com Hora de forma muito Simples e pratica.
+   - possue vários métodos para se pegar a hora onde pode ser inserida manualmente ou buscar a hora atual do sistema utilizado.
+   
+   ----------------------------------------
+  ** Class LocalDateTime **
+   - É uma classe resultadp da junção de LocalTime e LocalDate podendo utilizar os métodos de Ambos normalmente no entanto se deseja 
+   formatar de forma especifica por exemplo a data é recomendadp utilizar o DateFormat.
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

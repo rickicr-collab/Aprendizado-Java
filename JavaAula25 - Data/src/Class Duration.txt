@@ -1,0 +1,23 @@
+Class Duration:
+
+ - É uma classe que foi criada para que você possa trabalhar com a quantidade de tempo de execução de uma aplicação ou 
+ sistema.
+ - sua formação é baseada em segundos e em nanos segundos.
+ - Se uma classe que voc~e está trabalhando não possui nanosegundo ou segundos é recomendado que você não trabalhe com a 
+ duration e utilize outra classe existente chamada period.
+ 
+ obs1: a classe Duration não possue método now , no entanto é possivel extrair os dados de nanos segundos para minutos , horas ,
+ dados de interface temporal entre outros.
+ 
+ obs2: A classe Duration possui certificações ISO como:
+  ** P = periodo (Y - years, M - Month, W - week, D - days) ** 
+  ** T = time (H - Hours, M - Minuts, S - Seconds) **
+  
+ obs3: deve - se ter cuidado pois a Classe Duration não aceita trabalhar com a Classe LocalDate pois a mesma não possui os segundos.
+ obs4: pode se utilizar interfaces temporais no entanto ps atributos permitidos e suportados devem ser os mesmo pois a Interface
+ Chronofield.unit suporta o tempo Century que a Classe Duration não possui suporte devido a isso pode se utilizar apenas os atributos
+ a que a classe Duration suporte dessas interfaces.
+ 
+ obs5:
+  - A classe Duration não Suportas os Tempos ( Centuries , Milenium, ERA).
+  - A classe Duration suporta os tempos ( Hora , MInutos , Segundos ).

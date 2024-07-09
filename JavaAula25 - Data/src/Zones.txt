@@ -1,0 +1,20 @@
+Zonas para datas:
+
+ ** ZOneID **
+  - ZoneID classe criada para se trabalhar e dar suportes as principais zonas Internacionais disponiveis no Java.
+  - Classe usada para realizar conversões de horarios nos fusos horários existentes.
+  
+
+ ** ZonedDatetime **
+  - Classe Criada para se trabalhar com Zonas de horarios internacionais baseadas nas Regras ISO 8601.
+  - A classe possue suporte a algumas Zonas principais do Mundo.
+  - A Classe possue suporte as varias categorias de Hora como (minuto, hora e segundo).
+  - A classe possue suporte a data com categorias (mês, ano).
+  
+ ** ZoneOffSet **
+  - Classe criada para se trablhar com horarios que não possuem zonas padrão mais base de horarios e intervalos fixas.
+  - Na classe e possivel verificar o maior e menor intervalo colocado em horas para as zonas disponiveis.
+  - É possivel criar uma zona para horarios não disponiveis no entanto deve - se ter atenção que segue uma sintaxe padrão para
+  realizar esse trabalho.
+  
+  Sintaxe padrão: função ZoneOffSet.of("-04:00") → você atribui a uma variavel com nome do local a ser atribuido o valor de horario a zona.

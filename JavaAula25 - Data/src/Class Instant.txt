@@ -1,0 +1,10 @@
+Class Utility Instant:
+
+ - Uma classe Bem parecida com a classe Date que trabalha com MIlisegundos desde de 1960.
+ - No entanto a classe Instant trabalha com Nanosegundos.
+ - É uma classe do pacote java time e todo objeto que você instancia se torna imutavel.
+ - Geralmente o retorno do valor em nanos segundo da função now da classe Instante retorna valores em Zulu time.
+ - Zulu time é geralmente usado em aplicações de data e geralmente é preciso salvar essas informações em banco de dadose pelo Zulu time 
+ ser um horario neutro ele facilita essa integração quando se trata de outras zonas de diferença de tempo entre elas.
+ 
+ 

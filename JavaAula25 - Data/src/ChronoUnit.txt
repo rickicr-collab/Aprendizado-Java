@@ -1,0 +1,8 @@
+Enumeração ChronoUnit:
+
+ - Enumeração que possue uma amplo suporte para data podendo ter retorno para eras, milenius , e séculos e periodos de tempo.
+ - compativel com diversas funções de outras classes que implementam as interfaces tempoais .
+ - É possivel retornar valores de intervalos de datas pegando cada valor especifico de acordo com esse intervalo de tempo ,
+ uma enumeração bem util e versatil para uso do dia a dia.
+ 
+ 
