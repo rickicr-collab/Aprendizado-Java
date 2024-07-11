@@ -15,7 +15,7 @@ public class DateTimeFormatterTest01 {
 	System.out.println("Primeira forma DateTimeFormatter: " + s1);
 	System.out.println("Segunda forma DateTimeFormatter: " + s2);
 	System.out.println("Terceira Forma DateTimeFormatter: " + s3);
-	
+
 	System.out.println("---- <<<< Utilizando Método Parse >>>> ----");
 	LocalDate parse1 = LocalDate.parse("20210219", DateTimeFormatter.BASIC_ISO_DATE);
 	LocalDate parse2 = LocalDate.parse("2021-02-19+05:00", DateTimeFormatter.ISO_DATE);
@@ -28,30 +28,27 @@ public class DateTimeFormatterTest01 {
 	LocalDateTime now = LocalDateTime.now();
 	String timeNowFormat = now.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
 	System.out.println("LocalDatetime Formatado: " + timeNowFormat);
-	
+
 	LocalDateTime parse4 = LocalDateTime.parse("2024-07-09T12:14:39.7470157");
 	System.out.println("Parse4: " + parse4);
-	
+
 	System.out.println("---- <<<< DateTimeFormatter >>>> ----");
 	DateTimeFormatter formatDateBR = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 	String formatBr = LocalDate.now().format(formatDateBR);
 	System.out.println("Data formatada para padrão Brasileiro: " + formatBr);
-	
+
 	LocalDate parse5 = LocalDate.parse("09/07/2024", formatDateBR);
 	System.out.println("Parse5: " + parse5);
-	
+
 	DateTimeFormatter formatterIt = DateTimeFormatter.ofPattern("dd.MMMM.yyyy", Locale.ITALY);
 	String formatIT = LocalDate.now().format(formatterIt);
 	System.out.println("Data formatada para padrão Italiano: " + formatIT);
-	
+
 	LocalDate parse6 = LocalDate.parse("09.luglio.2024", formatterIt);
 	System.out.println("Parse6: " + parse6);
-	
-	
-	
-	
+
     }
-    
+
     public static void tituloGerador() {
 	System.out.println("---------------------------------------------");
 	System.out.println("      Trabalhando com DateTimeFormatter      ");

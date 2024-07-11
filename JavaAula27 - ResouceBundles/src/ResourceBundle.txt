@@ -1,0 +1,11 @@
+Classe Resource Bundle:
+
+ - é uma classe que o Java como forma de pegar uma messagem possuida baseada na sua localização do sistema ou no sistema.
+ possuidp ou site.
+ - tem a função de internacionalizar as suas mensagem dentro de um resourcebundle.
+ 
+ obs: para criar um arquivo do Zero como resource bundle precisa de um nome Base do zero colocando um nome padrão para filtro + mais a
+ localização desejada.
+ 
+ - A função do Arquivo Proprerties é separar as propriedades das mensagems em chaves e valor.
+ 
