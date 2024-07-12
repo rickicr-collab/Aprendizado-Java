@@ -26,6 +26,7 @@ public class ResourceBundleTest01 {
 	bundle = ResourceBundle.getBundle("messages");
 	System.out.println(bundle.getString("hi"));
 	System.out.println(bundle.getString("youtube"));
+	
 
     }
 
