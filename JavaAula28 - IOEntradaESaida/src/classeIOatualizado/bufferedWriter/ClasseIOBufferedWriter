@@ -1,0 +1,35 @@
+
+** Class Utilities - BufferedWriter **
+
+  A classe BufferedWriter no Java é uma classe do pacote java.io que permite escrever caracteres de forma eficiente
+  em um arquivo ou outro destino de saída, utilizando um buffer para otimizar as operações de escrita. 
+  O uso de um buffer reduz o número de operações de escrita, o que melhora o desempenho, especialmente ao lidar com grandes quantidades de dados.
+ 1. Herança e Implementação:
+  A classe BufferedWriter é uma subclasse de Writer, que é uma classe abstrata para escrita de caracteres. Ela implementa a interface Closeable, o que significa que pode ser fechada após o uso para liberar os recursos do sistema.
+ 2. Construtores:
+  A classe BufferedWriter tem alguns construtores principais:
+  BufferedWriter(Writer out):
+        Cria um BufferedWriter que utiliza o Writer especificado (como um FileWriter, OutputStreamWriter, etc.) para realizar a escrita.
+
+
+/*
+ * COMENTARIOS SOBRE AS CLASSES BUFFERED WRITER / BUFFERED READER:
+ * 
+ * AMBAS AS CLASSES SERVERM PARA SE TRABALHAR COM ARQUIVOS EXTENSOS.
+ * 
+ * OBS1: A CLASSE BUFFERED WRITER POSSUI FUNCÕES COMO NEWLINE() QUE REALIZAM 
+ * A QUEBRA DE LINHA ATRAVEZ DE CARACTER OCULTO SEM NECESSIDADE DE DIGITAR
+ * CARACTER ESPECIAL \N PARA QUEBRA DE LINHA.
+ * 
+ * 
+ * OBS2: NO BUFFEREDREADER É TRABALHADO DE FORMA DIFERENTE QUE NO FILEREADER PARA VISUALIZAÇÃO DE ARQUIVOS
+ * USANDO O MÉTODO READLINE() ELE VISUALIZA UMA LINHA DENTRO DO ARQUIVO EM VEZ DE LER CARACTER POR CARACTER
+ * E RETORNA UMA STRING NO ENTANTO , ENTRETANTO O MÉTODO READLINE() ASSIM QUE ELE TERMINA DE LER A ALINHA DO
+ * ARQUIVO ELE TEM UM RETORNO NULO DEVIDO A ISSO É NECESSÁRIO CRIAR UM WHILE ONDE A STRING CRIADA RECEBE COMO 
+ * VALOR O OBJETO DA CLASSE BUFFEREDREADER USANDO FUNÇÃO READLINE() ENQUANTO O VALOR FOR DIFERENTE DE NULO.
+ * 
+ * OBS3: COM O TRY WITCH RESOURCES VOCÊ PODE ECONOMIZAR ALGUMAS LINHAS DE CODIGO CONSEGUINDO O MÉSMO RESULTADO.
+ * 
+ * 
+ * 
+ */

@@ -1,0 +1,2 @@
+Esse é o teste de leitura FileWriter junto com FileReader
+Segunda linha testando a escrita no file Reader

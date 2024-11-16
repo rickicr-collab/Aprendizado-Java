@@ -1,0 +1,2 @@
+testando a classe Buffered Writer encadeada com a classe FileWriter
+Segunda Linha de teste

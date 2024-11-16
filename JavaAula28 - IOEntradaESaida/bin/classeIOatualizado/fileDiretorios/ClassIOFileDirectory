@@ -1,0 +1,30 @@
+**Class Utilities - (File / Directory)**
+  
+  Em Java, a classe File faz parte do pacote java.io e fornece uma abstração para a manipulação de arquivos e diretórios no sistema de arquivos.
+  Ela permite realizar diversas operações, como verificar se um arquivo ou diretório existe, criar ou excluir arquivos, obter informações sobre um arquivo ou diretório,
+  entre outras.
+
+  Embora a classe File não seja usada para manipular o conteúdo dos arquivos diretamente (para isso, você usaria classes como FileInputStream, FileOutputStream, BufferedReader, BufferedWriter, entre outras), ela é fundamental para interagir com o sistema de arquivos e realizar operações básicas de gerenciamento de arquivos e diretórios.
+  Principais métodos da classe File relacionados a diretórios:
+  
+   1.Criação e exclusão de diretórios
+    mkdir(): Cria um diretório no sistema de arquivos. Retorna true se o diretório foi criado com sucesso, ou false caso contrário.
+    mkdirs(): Cria um diretório, incluindo todos os diretórios pai que não existirem. Retorna true se o diretório foi criado, ou false se a criação falhou.
+    delete(): Exclui o arquivo ou diretório. Retorna true se a exclusão foi bem-sucedida, ou false caso contrário. Se o objeto for um diretório, ele precisa estar vazio para ser excluído.
+
+   2.Verificação de informações sobre arquivos e diretórios
+    exists(): Retorna true se o arquivo ou diretório existir, e false caso contrário.
+    isDirectory(): Retorna true se o objeto File for um diretório.
+    isFile(): Retorna true se o objeto File for um arquivo regular.
+    canRead(), canWrite(), canExecute(): Métodos para verificar as permissões do arquivo ou diretório (leitura, gravação e execução).
+    length(): Retorna o tamanho do arquivo em bytes. Para diretórios, esse método retorna 0.
+
+   3.Listagem de conteúdo de diretórios
+    list(): Retorna uma lista com os nomes dos arquivos e diretórios contidos no diretório. Retorna null se o objeto File não for um diretório ou se ocorrer um erro.
+    listFiles(): Retorna um array de objetos File que representam os arquivos e subdiretórios contidos no diretório. Retorna null em caso de erro ou se o objeto não for um diretório.
+
+   4.Outros métodos úteis
+    getAbsolutePath(): Retorna o caminho absoluto do arquivo ou diretório.
+    getPath(): Retorna o caminho relativo do arquivo ou diretório.
+    getName(): Retorna o nome do arquivo ou diretório.
+    getParent(): Retorna o caminho do diretório pai do arquivo ou diretório.

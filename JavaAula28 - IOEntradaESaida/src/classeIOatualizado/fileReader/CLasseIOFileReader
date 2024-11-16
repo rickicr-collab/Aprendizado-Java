@@ -1,0 +1,30 @@
+
+** Classe FILEREADER **
+
+ A classe FileReader no Java é uma classe de leitura de arquivos que faz parte do pacote java.io. 
+ Ela é projetada para ler dados de arquivos de texto de forma eficiente, usando a codificação de caracteres padrão (normalmente UTF-8, 
+ dependendo da plataforma). Ela facilita a leitura de caracteres (e não bytes) diretamente de arquivos.
+
+ Aqui estão os principais pontos sobre a classe FileReader:
+ 1. Herança e Implementação:
+    Herança: A classe FileReader herda da classe InputStreamReader, que por sua vez herda de Reader.
+    Implementação: Implementa a interface Closeable, o que significa que pode ser fechada após o uso para liberar os recursos do sistema.
+
+ 2. Construtores:
+ A classe FileReader possui os seguintes construtores:
+
+    FileReader(String fileName):
+        Abre o arquivo de texto especificado pelo caminho (string) para leitura.
+        Exemplo: FileReader fr = new FileReader("arquivo.txt");
+    FileReader(File file):
+        Abre o arquivo especificado por um objeto File para leitura.
+        Exemplo: FileReader fr = new FileReader(new File("arquivo.txt"));
+    FileReader(FileDescriptor fd):
+        Abre o arquivo identificado pelo descritor de arquivo fd para leitura.
+
+ 3. Métodos Importantes
+    int read():
+        Lê o próximo caractere do arquivo e retorna como um inteiro.
+        Retorna o valor do caractere lido ou -1 quando o fim do arquivo é alcançado.
+
+   

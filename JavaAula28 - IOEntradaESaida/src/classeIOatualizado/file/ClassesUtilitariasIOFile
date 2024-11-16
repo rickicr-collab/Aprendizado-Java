@@ -1,0 +1,60 @@
+Classe Utilitarias 
+
+***IO (File)***
+
+- É uma classe básica do formato IO e tem sua importancia  para a programação pois ao desenvolver o codigo é possivel prever o 
+  o resultado do código até mesmo de uma forma fisica.
+  
+  *Obs 1: Caso queira criar um arquivo para ser salvo no local de execução só e preciso
+   inserir o nome do arquivo no construtor da classe File.
+  
+  *Obs 2: Caso queria criar um arquivo e salvar em um local especifico é necessario passar o caminho
+   absoluto do local de salvamento do arquivo.
+  
+   1. - Ao utilizar a função CreateNewFile(); é gerado uma exceção do tipo Checked para entrada e saida de dados 
+   que necessita ser Tratada.
+   Ao criar um arquivo ele não sobre - escreve caso voce queira criar um novo arquivo do mesmo.
+   
+   2. - tambem é possivel deletar um arquivo utilizando a função delete();
+   a mesma gera um tipo boleano que pode ser utilizado para ser atribuido a uma variavel do mesmo tipo.
+   
+   OBS: è sempre uma boa prática verificar se o arquivo existe dentro do local utilizando o método
+   exists();
+   
+   3. - existe a função path(); que necessita do caminho para alocar o arquivo criado com a classe File.
+   4. - existe tambem a função chamada getPath(); que gera o caminho do arquivo que foi criado.
+   5. - existe uma função chamada isDirectory(); que mostra se ele arquivo é um diretorio.
+   6. - existem uma função cahamda isHidden(); que verifica se o arquivo é pculto.
+   7. - a função lastModified(); verifica quando foi realizada a ultima modificação no arquivo.
+   obs 3: a função lastModified(); mostra um valor do tipo long que pode ser convertido utilizando classes de pacote DATE.
+   
+   /*
+ * COMENTÁRIOS SOBRE A CLASSE FILE:
+ * 
+ * CLASSE MAIS BÁSICA PARA CRIAÇÃO DE ARQUIVOS
+ * 
+ * OBS1: PARA CRIAR UM ARQUIVO DENTRO DO DIRETORIO ATUAL DO PROJETO É NECESSÁRIO
+ * APENAS COLOCAR O NOME DO ARQUIVO, CASO SEJA COLOCADO EM OUTRO LUGAR VOCÊPODE UTILIZAR
+ * A FUNÇÃO COPY PATH PARA COPIAR O DIRETORIO FINAL PARA ONDE O ARQUIVO CRIADO ESTARÁ
+ * (É NECESSARIO INFORMAR O CAMINHO COMO PARAMENTRO AO INSTANCIAR O NOVO OBJETO COM 
+ * O CONSTRUTOR NEW()).
+ * 
+ * OBS2:  É POSSIVEL CRIAR UM ARQUIVO DENTRO DE UM SYSOUT PRINT  O ARQUIVO SERÁ CRIADO 
+ * E O ESTADO SE FOR POSSIVEL CRIAR UM ARQUIVO COM TRUE / OU FALSE SE O ARQUIVO EXISTE 
+ * E NÃO PODE SER CRIADO NOVAMENTE.
+ * 
+ * FUNÇÕES:
+ * CREATENEWfILE() → CRIA UM NOVO ARQUIVO DA CLASSE FILE (É NECESSARIO TRATA EXCEÇÕES).
+ * EXIST() → VERIFICA SE O ARQUIVO EXISTE.
+ * DELETE() → DELETA O ARQUIVO EXISTENTE.
+ * CANREADER() → VERIFICA SE O ARQUIVO TEM PERMISSÃO DE LEITURA.
+ * GETPATH() → MOSTRA O LOCAL DE ORIGEM DO ARQUIVO EXISTENTE NO CONSTRUTO DDA CLASSE FILE.
+ * GETABSOLUTEPATH() → MOSTRA O CAMINHO TOTAL DE ONDE O ARQUIVO SE ENCONTRA NO COMPUTADOR.
+ * ISDIRECTORY() → MOSTRA SE O ARQUIVO É UM DIRETORIO.
+ * ISHIDDEN() → MOSTRA SE É UM ARQUIVO OCULTO.
+ * LASTMODIFIED() → MOSTRA A ULTIMA VEZ QUE O ARQUIVO FOI MODIFICADO
+ * COMO É UM ARQUIVO DO TIPO LONG É NECESSARIO UTILIZAR A CLASSE DATE PARA
+ * CONVERTER O VALOR EM MILISEGUNDOS EM FORMATO DE HORA.
+ * 
+ * 
+ */

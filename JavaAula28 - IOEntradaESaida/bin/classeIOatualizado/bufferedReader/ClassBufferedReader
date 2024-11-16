@@ -1,0 +1,18 @@
+Class Utilities - BufferedReader
+
+ A classe BufferedReader no Java, que faz parte do pacote java.io, é utilizada para ler textos de forma eficiente de um fluxo de caracteres,
+ como arquivos ou entrada do usuário. O principal benefício do BufferedReader é o uso de buffers, que aumenta o desempenho de leitura, 
+ especialmente ao lidar com grandes quantidades de dados.
+ 1. Herança e Implementação:
+  A classe BufferedReader é uma subclasse da classe abstrata Reader, e, como outras classes que trabalham com fluxos de entrada, 
+  ela implementa a interface Closeable, permitindo o fechamento adequado do fluxo de dados.
+ 2. Construtores:
+  A classe BufferedReader possui dois construtores principais:
+  
+  BufferedReader(Reader in):
+   - Cria um BufferedReader que utiliza o fluxo de entrada Reader especificado (como FileReader, InputStreamReader, StringReader, etc.) para ler os dados.
+  BufferedReader(Reader in, int sz):
+   - Cria um BufferedReader utilizando o fluxo de entrada Reader especificado e define o tamanho do buffer. 
+     O parâmetro sz define o número de caracteres que o buffer pode armazenar.
+     
+ 

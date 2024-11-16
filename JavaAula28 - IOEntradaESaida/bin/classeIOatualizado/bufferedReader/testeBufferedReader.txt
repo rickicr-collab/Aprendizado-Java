@@ -1,0 +1,2 @@
+Teste de primeira linha do BufferedReader encadeado
+Teste de segunda linha do BuffererReader encandeado
