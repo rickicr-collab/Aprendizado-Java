@@ -1,0 +1,31 @@
+Class Utilities - Path / Paths e Files
+
+
+ A classe Paths no Java faz parte do pacote java.nio.file e foi introduzida no Java 7 como parte da nova API de entrada/saída (NIO 2).
+ Ela fornece métodos utilitários para lidar com caminhos de arquivos e diretórios, facilitando a manipulação e a criação de objetos do tipo Path,
+ que é a representação abstrata de um caminho de arquivo ou diretório.
+ Definição e Funcionalidade da Classe Paths
+  - A classe Paths é uma classe utilitária, o que significa que ela não pode ser instanciada diretamente. Ela contém apenas métodos estáticos para criar objetos do tipo Path. O Path é o tipo principal na nova API de arquivos (NIO 2) e representa um caminho de sistema de arquivos de forma independente do sistema operacional subjacente.
+ Métodos Comuns da Classe Paths
+  - Aqui estão alguns dos métodos mais comuns da classe Paths:
+    1.get(Path first, Path... more)
+     Este método combina um ou mais caminhos em um único caminho.
+    2.get(String first, String... more)
+     Similar ao método acima, mas aceita strings como parâmetros em vez de objetos Path. 
+     Ele cria um objeto Path a partir de uma sequência de strings.
+    3.get(String path)
+     Este é o método mais comum, onde se cria um Path a partir de uma string que representa o caminho.
+     
+Características e Benefícios
+ 1.Plataforma Independente: A API NIO 2, incluindo a classe Paths, é projetada para ser independente do sistema operacional, o que significa que seu código vai funcionar corretamente em diferentes plataformas (Windows, Linux, macOS) sem precisar se preocupar com os detalhes específicos de cada sistema de arquivos.
+ 2.Manipulação de Caminhos: A classe Path e a classe Paths permitem realizar várias operações de manipulação de caminhos, como combinar caminhos, resolver caminhos relativos, obter informações sobre o caminho (como nome, extensão, etc.), e muito mais.
+ 3.Facilidade de Uso: Métodos como get() e resolve() facilitam a criação e manipulação de caminhos sem a necessidade de lidar com a complexidade das APIs anteriores (como File).
+
+Considerações:
+Embora Paths seja amplamente usada para criar instâncias de Path, a classe Files é usada para manipular arquivos e diretórios reais, como leitura, gravação e verificação de propriedades.
+A classe Path é imutável, o que significa que qualquer modificação no caminho resulta em um novo objeto, mantendo a segurança e a integridade dos dados.
+
+Conclusão
+A classe Paths é uma ferramenta poderosa e conveniente para lidar com caminhos de arquivos no Java, oferecendo uma maneira mais moderna e robusta de trabalhar com sistemas de arquivos em comparação com a antiga classe File. Ela faz parte da nova API NIO (New I/O), que é mais eficiente e flexível, além de ser independente de plataforma.
+
+ 
