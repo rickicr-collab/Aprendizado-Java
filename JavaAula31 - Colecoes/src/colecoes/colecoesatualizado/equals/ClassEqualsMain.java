@@ -4,8 +4,7 @@ public class ClassEqualsMain {
 	public static void main(String[] args) {
 		titulo();
 		Smartphone celular1 = new Smartphone("14BCQ", "Samsung");
-		Smartphone celular2 = celular1;
-		
+		Smartphone celular2 = new Smartphone("14BCQ", "Apple");
 		System.out.println("Resultado: " + celular1.equals(celular2));
 		
 	}

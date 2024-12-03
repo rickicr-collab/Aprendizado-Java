@@ -13,11 +13,13 @@ public class Smartphone {
 	
 	
 
-
 	@Override
 	public boolean equals(Object obj) {
-		// TODO Auto-generated method stub
-		return super.equals(obj);
+		if(obj == null) return false;
+		if(this == obj) return true;
+		if(this.getClass() != obj.getClass()) return false;
+		Smartphone smartphone = (Smartphone) obj;
+		return serialNumber != null && serialNumber.equals(smartphone.serialNumber);
 	}
 
 
