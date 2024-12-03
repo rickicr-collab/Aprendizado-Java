@@ -1,5 +1,9 @@
 package colecoes.colecoesatualizado.equals;
 
+/*
+ * teste
+ */
+
 public class Smartphone {
 	private String serialNumber;
 	private String marca;
