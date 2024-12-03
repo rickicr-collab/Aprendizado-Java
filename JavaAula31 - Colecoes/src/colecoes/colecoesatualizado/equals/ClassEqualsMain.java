@@ -1,4 +1,4 @@
-package colecoesatualizado.equals;
+package colecoes.colecoesatualizado.equals;
 
 public class ClassEqualsMain {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package colecoesatualizado.equals;
+package colecoes.colecoesatualizado.equals;
 
 public class Smartphone {
 	private String serialNumber;
@@ -10,6 +10,17 @@ public class Smartphone {
 		this.serialNumber = serialNumber;
 		this.marca = marca;
 	}
+	
+	
+
+
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		return super.equals(obj);
+	}
+
+
 
 
 	public String getSerialNumber() {
