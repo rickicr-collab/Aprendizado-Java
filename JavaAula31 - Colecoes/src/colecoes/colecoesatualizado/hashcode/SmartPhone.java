@@ -13,9 +13,6 @@ public class SmartPhone {
 		this.nome = nome;
 	}
 	
-	
-	
-	
 	@Override
 	public boolean equals(Object obj) {
 		if(obj == null) return false;
@@ -24,17 +21,11 @@ public class SmartPhone {
 		SmartPhone smartphone = (SmartPhone) obj;
 		return serialNumber != null && serialNumber.equals(smartphone.serialNumber);
 	}
-	
-	
-
 
 	@Override
 	public int hashCode() {
 		return serialNumber != null ? this.serialNumber.hashCode():0;
 	}
-
-
-
 
 	public String getSerialNumber() {
 		return serialNumber;
