@@ -1,0 +1,10 @@
+** Class Hash code ** 
+
+Observação para as implementações
+
+
+1. → se x.equals(y) == true, y.hashcode() == x.hashcode()
+2. → y.hashcode() == x.hashcode() não necessariamente o equals de y.equals(x) tem que ser true;
+3. → se x.equals(y) == false
+4. → se y.hashcode() != x.hashcode() x.equals(Y) return false.
+
