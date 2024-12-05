@@ -1,0 +1,20 @@
+Coleções ** Lista **
+
+1. Até a versão 1.4 do java para se declara uma lista voce precisa-va utilizar arraysList que são listas de Arrays de listas dinamicos 
+   que não possue as limitações de um Array normal.
+2. no entanto devido ao argumento da classe List receber um objeto qualquer tipo de valor poderia ser adicionado na lista e posteriormente
+   se houvesse necessidade de manuteção ou modificação não se sabia qual tipo de valor possui no array lista os tipos possue metodos distintos
+   entre si e isso gerava um problema serio.
+3. Na versão 1.5 do Java foi introduzido o conceito de generics que em tempo de compilação restringia o tipo de dados que se podia adicionar na 
+   lista dinamica sem gerar conflito de tipos isso solucionou varios problemas de uso e de execução existentes.
+
+obs(1): não é recomendavel mexer no tamanho da lista utilizando o for , afinal na condição de interação do for estimado o tamanho da lista utilizando 
+        a função size() ao tentar adicionar dinamicamente pelo for é gerado uma exceção chamada ConcurrentModificationException.
+
+obs(2): Ao declarar o tipo para a lista nas generics é obrigatorio os tipos ser um objeto , lista não são declaradas com tipos primitivos ao se declarar
+		é gerado um erro de compilação informando incompatibilidade com tipos primitivos. devido ao Java chamar metodos como equals() e Hashcode() de forma interna
+		e como o Java não trata o tipo primitivo desta maneira ele não permiti a instancia de tipos primitivos em lista somente objetos com as Classes Wrappers
+		e mesmo que voce declare por exemplo utilizando A classe Wrappers Integer para criar uma lista de numeros inteiros o java possue o conceito de boxing e unboxing 
+		onde ele incapsula e converte de um numero primitivo para um numero do tipo Wrapper.
+
+    

@@ -21,6 +21,15 @@ public class SmartPhone {
 		SmartPhone smartphone = (SmartPhone) obj;
 		return serialNumber != null && serialNumber.equals(smartphone.serialNumber);
 	}
+	
+	
+	
+	
+
+	@Override
+	public String toString() {
+		return "SmartPhone [serialNumber=" + serialNumber + ", nome=" + nome + "]";
+	}
 
 	@Override
 	public int hashCode() {
