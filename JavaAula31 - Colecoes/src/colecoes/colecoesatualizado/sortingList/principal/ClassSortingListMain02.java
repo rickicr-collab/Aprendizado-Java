@@ -2,9 +2,21 @@ package colecoes.colecoesatualizado.sortingList.principal;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import colecoes.colecoesatualizado.sortingList.Manga;
+
+
+class MangaSortByIdComparator implements Comparator<Manga>{
+
+	@Override
+	public int compare(Manga manga1, Manga manga2) {
+		return Long.compare(manga1.getId(), manga2.getId());
+	}
+	
+}
+
 
 public class ClassSortingListMain02 {
 	public static void main(String[] args) {
@@ -22,10 +34,19 @@ public class ClassSortingListMain02 {
 		}
 		System.out.println("---------------------------------");
 		Collections.sort(mangas);
-		System.out.println("Visualizando a Lista (Ordenada): ");
+		System.out.println("Visualizando a Lista (Ordenada por Nome): ");
 		for(Manga manga: mangas) {
 			System.out.println(manga);
 		}
+		
+		System.out.println("---------------------------------");
+		System.out.println("Visualizando a Lista (Ordenada por ID utilizando classe externa): ");
+		Collections.sort(mangas, new MangaSortByIdComparator());
+		for(Manga man: mangas) {
+			System.out.println(man);
+		}
+		
+		
 
 	}
 	
