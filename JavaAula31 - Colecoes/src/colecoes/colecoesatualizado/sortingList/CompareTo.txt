@@ -1,0 +1,18 @@
+ **Metodo CompareTo**
+ 
+ 
+- Método utilizado quando se implementa a interface Comparable.
+- o Método compareTo é o unico método existente nesta interface e precisa ser sobreescrito de acordo
+  com a sua necessidade.
+
+Regras para se implementar o método compareTo:
+
+- retorno -1: se o this for menor que o Objeto usado como argumento. retorna exemplo → -1
+- retorno 0: se o this for igual a o objeto usado como argumento
+- retorno 1: se o this for maior que objeto passado 
+
+
+obs: Ao utilizar classes Wrappers é possivel utilizar os métodos compareTo das proprias classes
+	as mesmas irão ordenar os valores pelas classe chamada pelo método compareTo.
+  
+  
