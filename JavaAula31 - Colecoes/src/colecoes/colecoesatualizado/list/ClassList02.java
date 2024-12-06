@@ -33,8 +33,6 @@ public class ClassList02 {
 		System.out.println("Existe na lista(Método Contains): " + smartPhone.contains(celular5));
 		int indexSmartPhone5 = smartPhone.indexOf(celular5);
 		System.out.println("Indice do smartphone(indexOf): " + indexSmartPhone5);
-		
-
 	}
 
 	public static void titulo() {
