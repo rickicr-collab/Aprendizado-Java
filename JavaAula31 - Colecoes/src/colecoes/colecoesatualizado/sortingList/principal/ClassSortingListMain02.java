@@ -9,7 +9,6 @@ import colecoes.colecoesatualizado.sortingList.Manga;
 
 
 class MangaSortByIdComparator implements Comparator<Manga>{
-
 	@Override
 	public int compare(Manga manga1, Manga manga2) {
 		return Long.compare(manga1.getId(), manga2.getId());
