@@ -1,13 +1,13 @@
 package colecoes.colecoesatualizado.hashcode;
 
-public class SmartPhone {
+public class Smartphone {
 	
 	private String serialNumber;
 	private String nome;
 	
 	
 	
-	public SmartPhone(String serialNumber, String nome) {
+	public Smartphone(String serialNumber, String nome) {
 		super();
 		this.serialNumber = serialNumber;
 		this.nome = nome;
@@ -18,7 +18,7 @@ public class SmartPhone {
 		if(obj == null) return false;
 		if(this == obj) return true;
 		if(this.getClass() != obj.getClass())return false;
-		SmartPhone smartphone = (SmartPhone) obj;
+		Smartphone smartphone = (Smartphone) obj;
 		return serialNumber != null && serialNumber.equals(smartphone.serialNumber);
 	}
 	

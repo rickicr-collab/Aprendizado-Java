@@ -23,7 +23,22 @@ public class Smartphone {
 		Smartphone smartphone = (Smartphone) obj;
 		return serialNumber != null && serialNumber.equals(smartphone.serialNumber);
 	}
+	
+	
 
+
+
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Smartphone [serialNumber=");
+		builder.append(serialNumber);
+		builder.append(", marca=");
+		builder.append(marca);
+		builder.append("]");
+		return builder.toString();
+	}
 
 
 

@@ -3,20 +3,20 @@ package colecoes.colecoesatualizado.list;
 import java.util.ArrayList;
 import java.util.List;
 
-import colecoes.colecoesatualizado.hashcode.SmartPhone;
+import colecoes.colecoesatualizado.hashcode.Smartphone;
 
 public class ClassList02 {
 	public static void main(String[] args) {
 		titulo();
-		SmartPhone celular1 = new SmartPhone("14BAQ", "Samsung");
-		SmartPhone celular2 = new SmartPhone("222222", "Pixel");
-		SmartPhone celular3 = new SmartPhone("3333333", "Apple");
-		SmartPhone celular4 = new SmartPhone("14B557", "ReadMin");
-		SmartPhone celular5 = new SmartPhone("222225", "Pixel");
-		SmartPhone celular6 = new SmartPhone("22335", "Pixel");
+		Smartphone celular1 = new Smartphone("14BAQ", "Samsung");
+		Smartphone celular2 = new Smartphone("222222", "Pixel");
+		Smartphone celular3 = new Smartphone("3333333", "Apple");
+		Smartphone celular4 = new Smartphone("14B557", "ReadMin");
+		Smartphone celular5 = new Smartphone("222225", "Pixel");
+		Smartphone celular6 = new Smartphone("22335", "Pixel");
 
 		System.out.println("<<< imprimindo A lista >>>");
-		List<SmartPhone> smartPhone = new ArrayList<>();
+		List<Smartphone> smartPhone = new ArrayList<>();
 		smartPhone.add(celular1);
 		smartPhone.add(celular2);
 		smartPhone.add(celular3);
@@ -24,7 +24,7 @@ public class ClassList02 {
 		smartPhone.add(celular5);
 		smartPhone.add(0, celular6);
 
-		for (SmartPhone phone : smartPhone) {
+		for (Smartphone phone : smartPhone) {
 			System.out.println(phone);
 		}
 
