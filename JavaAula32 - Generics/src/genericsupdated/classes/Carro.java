@@ -1,39 +1,20 @@
-package generics.classes;
+package genericsupdated.classes;
 
 public class Carro {
 	private String nome;
-	
-	
-	
+
 	public Carro(String nome) {
+		super();
 		this.nome = nome;
 	}
-	
-	
-	
-	
-	public Carro() {
-		super();
-	}
 
-
-
-
+	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Carro [Nome = ");
+		builder.append("Carro [nome=");
 		builder.append(nome);
 		builder.append("]");
 		return builder.toString();
-	}
-
-	
-	public String getNome() {
-		return nome;
-	}
-	
-	public void setNome(String nome) {
-		this.nome = nome;
 	}
 	
 	
