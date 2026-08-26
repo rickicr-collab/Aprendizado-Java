@@ -23,7 +23,7 @@ public class ComportamentoPorParametroTest03 {
 				);
 		
 		filter(cars1, car -> car.getColor().equals("Grenn"));
-		filter(cars1, car ->car.getYear() < 2000);
+		filter(cars1, car -> car.getYear() < 2000);
 		
 		
 	}
@@ -31,9 +31,9 @@ public class ComportamentoPorParametroTest03 {
 	
 	public static <T> List<T> filter(List<T> list, Predicate<T> predicate){
 		List<T> listFilter = new ArrayList<>(); 
-		for (T  t: list) {
-			if(predicate.test(t)) {
-				listFilter.add(t);
+		for (T  e: list) {
+			if(predicate.test(e)) {
+				listFilter.add(e);
 			}
 		}
 		System.out.println("Lista Filtrada: " + listFilter);
