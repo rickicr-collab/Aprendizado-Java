@@ -17,13 +17,8 @@ public class ComportamentoPorParametroTest03 {
 	public static void main(String[] args) {
 		titulo();
 		
-		List<Car> cars1 = List.of(
-				new Car("Green", 2012), new Car("Black", 2026), new Car("Red", 2015),
-				new Car("Yellow", 2017), new Car("Blue", 2000), new Car("White", 2005)
-				);
-		
-		filter(cars1, car -> car.getColor().equals("Grenn"));
-		filter(cars1, car -> car.getYear() < 2000);
+		filter(cars, car -> car.getColor().equals("Green"));
+		filter(cars, car -> car.getYear() < 2010);
 		
 		
 	}
