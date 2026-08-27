@@ -1,0 +1,13 @@
+Lambdas
+
+- lambdas são formas de criar o tratamento da interfaçe funcional de forma mais concisa.
+
+a Interface Predicate: utilizada como contrato que recebe um objeto para ser tratado pela forma lambda, o metodo teste desta interfaçe
+retorna um booleano então a lambda atravez da condição aplicada a ela precisa necessariamente ter um retorno em booleano
+ao ser utilizado corretamente retorna a condição utilizada com o parametro declarado para a interface Predicate.
+
+a interface Consumer: utilizada tambem como contrato que recebe um objeto para ser tratado pela forma de lambda ,porem seu 
+retorno é vazio mais possue o mesmo fundamento para a sua utilização.
+
+a interface Function: um interfaçe funcional que segue o mesmo padrão das anteriores so que o seu diferencial é que ele possue dos paramentros
+em sua função um parametro que recebe como argumento e outro que será o retorno da função e pode ser qualquer coisa.
