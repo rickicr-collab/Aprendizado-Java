@@ -1,0 +1,10 @@
+Method Reference: é uma sintaxe que serve para simplificar a chamadas dos métodos linkado uma classe com seu método utilizando os simbolos
+"::" em sua sintaxe.
+
+Methods Reference estatico: utilizando métodos estaticos que possue function , e methods targert / classe fonte  e seus métodos especificos (exemplo: System::outplintln.
+
+Methods Reference com Objeto: utilizando a sisntaxe do lambda pode chamar por exempli uma lista e ordendar utilizando metodos referecne chamado um método não estaticos
+existente dentro da classe classo vc cria um objeto da classe especifica em que voce está trabalhandopara depois chamar o método pela sintaxe do lambda.
+
+Podemos utilizar Lambda com Methods Reference para construir objetos tornando o codigo mais conciso e enxuto utilizando a interfaçe Supplier.
+
