@@ -1,0 +1,8 @@
+Optional
+ - classe criada na versão 8 do java com um objetivo simples de evitar a exceção nullpointexception sendo possivel retornar algo 
+ opcional em vez de uma exceção nullpointexception.
+ 
+ com opções de criar retorno Optional , nulos ou vazios com os métodos Opetional.empty() / Optional.Nullable().
+ 
+ Obs: Optinal não é indicado como passagem de parametros / ou como variavel/atributo de classe ( motivo o Optional não é uma
+ classe que implementa Seriazable).
